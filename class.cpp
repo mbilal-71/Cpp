@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 // 1.[VARIABLES]:
@@ -110,7 +111,7 @@ int main()
     // cout << c;
 
     // 11.[Control Structures]:
- 
+
     // 11.1.[if-else]: => Selection control structure
 
     // int age;
@@ -126,24 +127,49 @@ int main()
 
     // 11.2.[Switch Case]: Selection control structure
 
+    // int age;
+    // cout << "Enter your age:";
+    // cin>>age;
+    // switch ((age>=18) && (age<=60))
+    // {
+    //     case 0:
+    //     cout << "You are not eligible for driving license";
+    //     break;
+    // case 1:
+    //     cout << "You are eligible for driving license";
+    //     break;
 
-    int age;
-    cout << "Enter your age:";
-    cin>>age;
-    switch (age)
-    {
-    case 18:
-        cout << "You are eligible for driving license";
-        break;
-    case 22:
-    cout << "You are 22";
-        break;
-    
-    default:
-    cout << "No special case";
-        break;
-    }
+    // }
+
+    // string fruit;
+    // int choice;
+    // cout << "Enter your fav fruit" << endl;
+    // cin >> fruit;
+
+    // if (fruit == "mango")
+    // {
+    //     choice = 1;
+    // }
+    // else if (fruit == "apples")
+    // {
+    //     choice = 2;
+    // }
+    // else
+    // {
+    //     choice = 3;
+    // }
+
+    // switch (choice)
+    // {
+    // case 1:
+    //     cout << "I like mangoes";
+    //     break;
+    // case 2:
+    //     cout << "I like apples";
+    //     break;
+    // default:
+    //     cout << "I like all fruits";
+    // }
 
     return 0;
-    
 }
