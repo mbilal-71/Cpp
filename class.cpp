@@ -110,6 +110,40 @@ int main()
     // cout << c;
 
     // 11.[Control Structures]:
+ 
+    // 11.1.[if-else]: => Selection control structure
+
+    // int age;
+    // cout << "Enter your age:" <<endl;
+    // cin >> age;
+    // if(age>=18 && age<=60){
+    //     cout << "You are eligible to vote";
+    // } else if(age>60 && age<=70){
+    //     cout << "You should have Valid CNIC to cast vote";
+    // } else{
+    //     cout << "You are not eligible to vote";
+    // }
+
+    // 11.2.[Switch Case]: Selection control structure
+
+
+    int age;
+    cout << "Enter your age:";
+    cin>>age;
+    switch (age)
+    {
+    case 18:
+        cout << "You are eligible for driving license";
+        break;
+    case 22:
+    cout << "You are 22";
+        break;
+    
+    default:
+    cout << "No special case";
+        break;
+    }
 
     return 0;
+    
 }
