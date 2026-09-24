@@ -171,5 +171,68 @@ int main()
     //     cout << "I like all fruits";
     // }
 
+    // 11.3.[For Loop]:
+
+    // for(initialization; condition; updation){ sb sa phly initiate ho ga, phr condition check ho gi, usky bd body ma code execute ho ga and phr updation ho gi
+    //  loop body()
+    // }
+
+    // int i;
+    // for (int i = 1; i <= 10; i++)
+    // {
+    //     cout << "i"<< endl;
+    // }
+
+    // infinite for loop
+
+    // int i;
+    // for (int i = 1; 3 <= 10; i++)
+    // {
+    //     cout << "i"<< endl;
+    // }
+    
+    // 11.4.[While Loop]:
+
+    // int i=0;
+    // while ( i<=4)
+    // {
+    //     cout << i << endl;
+    //     i++;
+    // }
+
+    //infinite while loop
+
+    // int i=1;
+    // while (true)
+    // {
+    //     cout << i << endl;
+    //     i++;
+    // }
+    
+    // 11.5.[do-while Loop]:
+
+    // int i=0;
+    // do
+    // {
+    //     cout << i << endl;
+    //     i++;
+    // } while (i<=4);
+
+    // int i=1;
+    // do
+    // {
+    //     cout << "6 * " << i << " = " << i*6 << endl;
+    //     i++;
+    // } while (i<=10);
+    
+    int i=5;
+    do
+    {
+        cout << "*" <<endl;
+        i--;
+    } while (i>=1);
+    
+    
+
     return 0;
 }
