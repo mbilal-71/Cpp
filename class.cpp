@@ -226,6 +226,7 @@ int main()
     // } while (i<=10);
 
     int i, j;
+
     // for (i = 1; i <= 5; i++)
     // {
     //     for (j = 1; j <= 5; j++)
@@ -286,15 +287,15 @@ int main()
     //     cout << endl;
     // }
 
-    for (i = 1; i <=5; i++)
-    {
-        for (j = 1; j <= i; j++)
-        {
-            cout << j;
-        }
-        cout << endl;
-    }
-    
+    // for (i = 1; i <=5; i++)
+    // {
+    //     for (j = 1; j <= i; j++)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+
     // for (i = 1; i <=5; i++)
     // {
     //     for (j = 1; j <= i; j++)
@@ -303,6 +304,39 @@ int main()
     //     }
     //     cout << endl;
     // }
+
+    // for ( i = 5; i >=1; i--)
+    // {
+    //     for(j=5; j>=i; j--){
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+
+    for ( i = 5; i >=1; i--)
+    {
+        for(j=5; j>=i; j--){
+            cout << i;
+        }
+        cout << endl;
+    }
+
+    // for ( i=1; i <=5; i++)
+    // {
+    //     for(j=5; j>=i; j--){
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+
+    // for ( i=1; i <=5; i++)
+    // {
+    //     for(j=5; j>=i; j--){
+    //         cout << i;
+    //     }
+    //     cout << endl;
+    // }
+    
 
     
 
