@@ -225,7 +225,7 @@ int main()
     //     i++;
     // } while (i<=10);
 
-    int i, j;
+    // int i, j;
 
     // for (i = 1; i <= 5; i++)
     // {
@@ -321,7 +321,6 @@ int main()
     //     cout << endl;
     // }
 
-
     // for ( i=1; i <=5; i++)
     // {
     //     for(j=5; j>=i; j--){
@@ -338,14 +337,13 @@ int main()
     //     cout << endl;
     // }
 
-//    for ( i = 5; i >=1; i--)
-//     {
-//         for(j=i; j>=1; j--){
-//             cout << j;
-//         }
-//         cout << endl;
-//     }
-
+    //    for ( i = 5; i >=1; i--)
+    //     {
+    //         for(j=i; j>=1; j--){
+    //             cout << j;
+    //         }
+    //         cout << endl;
+    //     }
 
     // for ( i=1; i <=5; i++)
     // {
@@ -354,9 +352,35 @@ int main()
     //     }
     //     cout << endl;
     // }
-    
+
+    // 12.[Break and Continue]:
+
+    // for (i = 1; i <= 5; i++)
+    // {
+    //     if(i==4){
+    //         break; // it will terminate loop on 4
+    //     }
+    //     cout << i << endl;
+    // }
+
+    // for (i = 1; i <= 5; i++)
+    // {
+    //     if(i==4){
+    //         continue; // it will skip 4
+    //     }
+    //     cout << i << endl;
+    // }
+
+
+    // 13.[Pointers]: => pointer is data type which holds the adress of other data types
+
+    int a = 3;
+    int* b = &a;   // * is derefrencing operator & adress operator
 
     
+    
+
+
 
     return 0;
 }
