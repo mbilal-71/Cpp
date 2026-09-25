@@ -190,7 +190,7 @@ int main()
     // {
     //     cout << "i"<< endl;
     // }
-    
+
     // 11.4.[While Loop]:
 
     // int i=0;
@@ -200,7 +200,7 @@ int main()
     //     i++;
     // }
 
-    //infinite while loop
+    // infinite while loop
 
     // int i=1;
     // while (true)
@@ -208,7 +208,7 @@ int main()
     //     cout << i << endl;
     //     i++;
     // }
-    
+
     // 11.5.[do-while Loop]:
 
     // int i=0;
@@ -224,14 +224,86 @@ int main()
     //     cout << "6 * " << i << " = " << i*6 << endl;
     //     i++;
     // } while (i<=10);
-    
-    int i=5;
-    do
+
+    int i, j;
+    // for (i = 1; i <= 5; i++)
+    // {
+    //     for (j = 1; j <= 5; j++)
+    //     {
+    //         cout << " * ";
+    //     }
+    //     cout << endl;
+    // }
+    // for (i = 1; i <= 5; i++)
+    // {
+    //     for (j = 1; j <= 5; j++)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+    // for (i = 1; i <= 5; i++)
+    // {
+    //     for (j = 1; j <= 5; j++)
+    //     {
+    //         cout << i;
+    //     }
+    //     cout << endl;
+    // }
+
+    // for (i = 5; i >= 1; i--)
+    // {
+    //     for (j = 5; j >= 1; j--)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+    // for (i = 5; i >= 1; i--)
+    // {
+    //     for (j = 5; j >= 1; j--)
+    //     {
+    //         cout << i;
+    //     }
+    //     cout << endl;
+    // }
+
+    // for (i = 1; i <=5; i++)
+    // {
+    //     for (j = i; j <= 5; j++)
+    //     {
+    //         cout << " * ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // for (i = 1; i <=5; i++)
+    // {
+    //     for (j = 1; j <= i; j++)
+    //     {
+    //         cout << " * ";
+    //     }
+    //     cout << endl;
+    // }
+
+    for (i = 1; i <=5; i++)
     {
-        cout << "*" <<endl;
-        i--;
-    } while (i>=1);
+        for (j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        cout << endl;
+    }
     
+    // for (i = 1; i <=5; i++)
+    // {
+    //     for (j = 1; j <= i; j++)
+    //     {
+    //         cout << i;
+    //     }
+    //     cout << endl;
+    // }
+
     
 
     return 0;
