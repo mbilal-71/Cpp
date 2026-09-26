@@ -376,8 +376,8 @@ int main()
 
     // & use:
 
-    int a = 3;
-    int* b = &a;   // * is derefrencing operator & adress operator
+    // int a = 3;
+    // int* b = &a;   // * is derefrencing operator & adress operator
     
     // cout << b << endl;
 
@@ -387,11 +387,16 @@ int main()
     
     // [pointer to pointer]:
 
-    int** c = &b;
-    cout << &b <<endl;
-    cout << c  <<endl;
-    cout << *c <<endl;
-    cout << **c <<endl;
+    // int** c = &b;
+
+    // cout << &b <<endl;
+    // cout << c  <<endl;
+    // cout << *c <<endl;
+    // cout << **c <<endl;
+
+    // 14. [Arrays]: => An array is a collection of items of similar type stored in contagious memory locations
+
+
 
 
     return 0;
