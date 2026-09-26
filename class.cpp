@@ -374,12 +374,24 @@ int main()
 
     // 13.[Pointers]: => pointer is data type which holds the adress of other data types
 
+    // & use:
+
     int a = 3;
     int* b = &a;   // * is derefrencing operator & adress operator
-
     
-    
+    // cout << b << endl;
 
+    // // * use:
+
+    // cout << "The value at adress b is " <<endl << *b;
+    
+    // [pointer to pointer]:
+
+    int** c = &b;
+    cout << &b <<endl;
+    cout << c  <<endl;
+    cout << *c <<endl;
+    cout << **c <<endl;
 
 
     return 0;
