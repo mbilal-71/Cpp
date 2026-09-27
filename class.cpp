@@ -377,13 +377,13 @@ int main()
     // & use:
 
     // int a = 3;
-    // int* b = &a;   // * is derefrencing operator & address operator
+    // int* b = &a;   // * is dereferencing operator & address operator
     
     // cout << b << endl;
 
     // // * use:
 
-    // cout << "The value at address b is " <<endl << *b;
+    // cout << "The value at address b is: " << *b << endl;
     
     // [pointer to pointer]:
 
@@ -391,7 +391,7 @@ int main()
 
     // cout << &b <<endl;
     // cout << c  <<endl;
-    // cout << *c <<endl;
+    // cout << *c <<endl; // it will give address of a in output
     // cout << **c <<endl;
 
     // 14. [Arrays]: => An array is a collection of items of similar type stored in contagious memory locations
@@ -420,7 +420,6 @@ int main()
     // 15. [Pointers and Arrays]:
 
     int marks[] = {86, 56, 92, 45};
-
     int* p = marks; // pointer to first element of array
     // cout << "The address of marks[0] is: " << p << endl; // prints the memory address
     // cout << *(p++) <<endl;
