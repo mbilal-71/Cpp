@@ -372,18 +372,18 @@ int main()
     // }
 
 
-    // 13.[Pointers]: => pointer is data type which holds the adress of other data types
+    // 13.[Pointers]: => pointer is data type which holds the address of other data types
 
     // & use:
 
     // int a = 3;
-    // int* b = &a;   // * is derefrencing operator & adress operator
+    // int* b = &a;   // * is derefrencing operator & address operator
     
     // cout << b << endl;
 
     // // * use:
 
-    // cout << "The value at adress b is " <<endl << *b;
+    // cout << "The value at address b is " <<endl << *b;
     
     // [pointer to pointer]:
 
@@ -395,8 +395,53 @@ int main()
     // cout << **c <<endl;
 
     // 14. [Arrays]: => An array is a collection of items of similar type stored in contagious memory locations
+    
+    // int i =0;
+    // int i, marks[] =  {86,56,92,45};
+
+    // cout << marks;
+
+    // for(i=0;i<4;i++){
+    //     cout << marks[i] <<endl;
+    // }
+
+    // while (i<4)
+    // {
+    //     cout << marks[i] <<endl;
+    //     i++;
+    // }
+
+    // do
+    // {
+    //     cout << marks[i] <<endl;
+    //     i++;
+    // } while (i<4);
+    
+    // 15. [Pointers and Arrays]:
+
+    int marks[] = {86, 56, 92, 45};
+
+    int* p = marks; // pointer to first element of array
+    cout << "The address of marks[0] is: " << p << endl; // prints the memory address
+
+    // [Values]:
+
+    cout << "The value of marks[0] is: " << *p << endl;
+    cout << "The value of marks[1] is: " << *(p+1) << endl;
+    cout << *p << endl;
+    cout << "The value of marks[2] is: " << *(p+2) << endl;
+    cout << "The value of marks[3] is: " << *(p+3) << endl;
 
 
+    // &address is taken by just name of variable
+    // marks will give address of 1st index
+    // use of &marks for address is wrong x x
+
+    // [Pointer arithmetic]:
+
+    // New address = Current address + (i * size of data type)
+    // (p + i)     =        p        + (i * size of data type)
+    //  32 + i     =        32       + (1 * 4) => 36
 
 
     return 0;
