@@ -422,6 +422,7 @@ int main()
     int marks[] = {86, 56, 92, 45};
     int* p = marks; // pointer to first element of array
     // cout << "The address of marks[0] is: " << p << endl; // prints the memory address
+    // cout << *(p+1) <<endl;
     // cout << *(p++) <<endl;
     // cout << *p <<endl;
     // cout << *(++p);
@@ -431,6 +432,7 @@ int main()
 
     // cout << "The value of marks[0] is: " << *p << endl;
     // cout << "The value of marks[1] is: " << *(p+1) << endl;
+    //  cout << *p <<endl;
     // cout << "The value of marks[2] is: " << *(p+2) << endl;
     // cout << "The value of marks[3] is: " << *(p+3) << endl;
 
