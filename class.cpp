@@ -450,24 +450,47 @@ using namespace std;
 //     return 0;
 // }
 
-// 16. [Structure, User and Enums]:
+// 16. [Structure, Union and Enums]:
 
-typedef struct employee
+// typedef struct employee
+// {
+//     int id;
+//     char favChar;
+//     float salary;
+// } emp;
+
+union money // better memory usage // it allows to share only data of one
 {
     int id;
-    char favChar;
-    float salary;
-} emp;
+    char car;
+    float pounds;
+};
+
+
+
 
 int main(){
-    emp ali;
-    ali.id = 101;
-    ali.favChar = 'A';
-    ali.salary = 120000;
 
-    cout << ali.id <<endl;
-    cout << ali.favChar <<endl;
-    cout << ali.salary <<endl;
+    // enum meal {Breakfast, Lunch, Dinner};
+    // meal m1 = Breakfast; // 2nd method
+    // cout << m1 << endl;
+    // cout << Breakfast << endl;
+    // cout << Lunch << endl;
+    // cout << Dinner << endl;
+    
+    // emp ali;
+    // ali.id = 101;
+    // ali.favChar = 'A';
+    // ali.salary = 120000;
+    // union money m1;
+    // m1.id = 313;
+    // m1.car = 'c';
+
+    // cout << ali.id <<endl;
+    // cout << ali.favChar <<endl;
+    // cout << ali.salary <<endl;
+    // cout << m1.id << endl;
+    // cout << m1.car << endl; // it will overwrite memory location and will change val of id
 
 
     return 0;
