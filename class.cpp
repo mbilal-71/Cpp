@@ -18,8 +18,8 @@ using namespace std;
 
 // 2.[INPUT / OUTPUT]:
 
-int main()
-{
+// int main()
+// {
     //    int num1, num2;
 
     //    cout << "Enter the value of num1: \n"; // << insertion operator
@@ -419,8 +419,8 @@ int main()
     
     // 15. [Pointers and Arrays]:
 
-    int marks[] = {86, 56, 92, 45};
-    int* p = marks; // pointer to first element of array
+    // int marks[] = {86, 56, 92, 45};
+    // int* p = marks; // pointer to first element of array
     // cout << "The address of marks[0] is: " << p << endl; // prints the memory address
     // cout << *(p+1) <<endl;
     // cout << *(p++) <<endl;
@@ -446,6 +446,28 @@ int main()
     // New address = Current address + (i * size of data type)
     // (p + i)     =        p        + (i * size of data type)
     //  32 + i     =        32       + (1 * 4) => 36
+    
+//     return 0;
+// }
+
+// 16. [Structure, User and Enums]:
+
+typedef struct employee
+{
+    int id;
+    char favChar;
+    float salary;
+} emp;
+
+int main(){
+    emp ali;
+    ali.id = 101;
+    ali.favChar = 'A';
+    ali.salary = 120000;
+
+    cout << ali.id <<endl;
+    cout << ali.favChar <<endl;
+    cout << ali.salary <<endl;
 
 
     return 0;
