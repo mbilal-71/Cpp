@@ -535,7 +535,7 @@ union money // better memory usage // it allows to share only data of one
 //     cout << "\nGood Morning";
 // }
 
-// 18. [Call back]:
+// 18. [Call by reference using pointer]:
 
 int sum(int a, int b){
     int c= a+b;
@@ -549,11 +549,11 @@ void swapPointer(int* a, int* b){
 
 int main(){
     int a=4, b=5;
-    cout << "The value of a is: " << a << endl;
-    cout << "The value of b is: " << b << endl;
+    cout << "The value of a before swap is: " << a << endl;
+    cout << "The value of b before swap is: " << b << endl;
     swapPointer(&a,&b);
-    cout << "The value of a is: " << a << endl;
-    cout << "The value of b is: " << b << endl;
+    cout << "The value of a after swap is: " << a << endl;
+    cout << "The value of b after swap is: " << b << endl;
 
 
     return 0;
