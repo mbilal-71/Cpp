@@ -579,22 +579,37 @@ union money // better memory usage // it allows to share only data of one
 
 // 20. [Return by reference]:
 
-int & swapReferenceVar(int &a, int &b){
-    int temp = a;
-    a = b;
-    b = temp;
-    return a;
+// int & swapReferenceVar(int &a, int &b){
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     return a;
+// }
+
+
+// int main(){
+    
+// int a=4, b=5;
+//     cout << "The value of a before swap is: " << a << endl;
+//     cout << "The value of b before swap is: " << b << endl;
+//     swapReferenceVar(a,b) = 543;
+//     cout << "The value of a after swap is: " << a << endl;
+//     cout << "The value of b after swap is: " << b << endl;
+
+//     return 0;
+// }
+
+// 21. [Inline functions]:
+
+inline int product(int a, int b){
+    return a*b;
 }
 
-
 int main(){
+    int a,b;
+    cout << "Enter value of a and b" << endl;
+    cin >> a >> b;
+    cout << "The product of a and b is: "  << product(a,b);
     
-int a=4, b=5;
-    cout << "The value of a before swap is: " << a << endl;
-    cout << "The value of b before swap is: " << b << endl;
-    swapReferenceVar(a,b) = 543;
-    cout << "The value of a after swap is: " << a << endl;
-    cout << "The value of b after swap is: " << b << endl;
-
     return 0;
 }
