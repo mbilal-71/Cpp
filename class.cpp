@@ -537,24 +537,64 @@ union money // better memory usage // it allows to share only data of one
 
 // 18. [Call by reference using pointer]:
 
-int sum(int a, int b){
-    int c= a+b;
+
+// void swapPointer(int* a, int* b){
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+
+// int main(){
+//     int a=4, b=5;
+//     cout << "The value of a before swap is: " << a << endl;
+//     cout << "The value of b before swap is: " << b << endl;
+//     swapPointer(&a,&b);
+//     cout << "The value of a after swap is: " << a << endl;
+//     cout << "The value of b after swap is: " << b << endl;
+
+
+//     return 0;
+// }
+
+// 19. [Call by reference using c++ reference variable]:
+
+// void swapReferenceVar(int &a, int &b){
+//     int temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+
+// int main(){
+    
+// int a=4, b=5;
+//     cout << "The value of a before swap is: " << a << endl;
+//     cout << "The value of b before swap is: " << b << endl;
+//     swapReferenceVar(a,b);
+//     cout << "The value of a after swap is: " << a << endl;
+//     cout << "The value of b after swap is: " << b << endl;
+
+//     return 0;
+// }
+
+// 20. [Return by reference]:
+
+int & swapReferenceVar(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+    return a;
 }
 
-void swapPointer(int* a, int* b){
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
 
 int main(){
-    int a=4, b=5;
+    
+int a=4, b=5;
     cout << "The value of a before swap is: " << a << endl;
     cout << "The value of b before swap is: " << b << endl;
-    swapPointer(&a,&b);
+    swapReferenceVar(a,b) = 543;
     cout << "The value of a after swap is: " << a << endl;
     cout << "The value of b after swap is: " << b << endl;
-
 
     return 0;
 }
