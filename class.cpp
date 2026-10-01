@@ -649,3 +649,57 @@ union money // better memory usage // it allows to share only data of one
 //     return 0;
 // }
 
+// 24. [Recursion]:
+
+// Factorial => n! = n * (n-1)
+
+// int factorial(int n){
+//     if (n<=1){
+//         return 1;
+//     }
+//     return n * factorial(n-1);
+// }
+
+
+// int main(){
+    
+// int num;
+// cout << "Enter a number" << endl;
+// cin >> num;
+// cout << "The factorial of num is: " << factorial(num);
+
+//     return 0;
+// }
+
+// Step by step calculation of factorial(4)
+// factorial(4) = 4 * factorial(3); 
+// factorial(4) = 4 * 3 * factorial(2);
+// factorial(4) = 4 * 3 * 2 * factorial(1);
+// factorial(4) = 4 * 3 * 2 * 1;
+// factorial(4) = 24;
+
+// Fibonacci Sequence:
+
+int fib(int n){
+    if (n<2){
+        return 1;
+    }
+  return fib(n-1) + fib(n-2);
+}
+
+int main(){
+    
+int num;
+cout << "Enter a number" << endl;
+cin >> num;
+cout << "The term in fibonacci sequence at index " <<num << " is: " << fib(num);
+
+    return 0;
+}
+
+//fib(5)= fib(4) + fib(3) ==> 5+3 = 8
+//fib(4)= fib(3) + fib(2) ==> 3+2 = 5
+//fib(3)= fib(2) + fib(1) ==> 2+1 = 3
+//fib(2)= fib(1) + fib(0) ==> 1+1 = 2
+//fib(1) = 1
+//fib(0) = 1
