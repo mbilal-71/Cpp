@@ -601,14 +601,35 @@ union money // better memory usage // it allows to share only data of one
 
 // 21. [Inline functions]:
 
+// inline int product(int a, int b){
+//     return a*b;
+// }
+
+// int main(){
+//     int a,b;
+//     cout << "Enter value of a and b" << endl;
+//     cin >> a >> b;
+//     cout << "The product of a and b is: "  << product(a,b);
+    
+//     return 0;
+// }
+
+// 22.[Static Variable]:
+
 inline int product(int a, int b){
-    return a*b;
+    static int c = 0;
+    c = c + 1;
+    return a*b+c;
 }
 
 int main(){
     int a,b;
     cout << "Enter value of a and b" << endl;
     cin >> a >> b;
+    cout << "The product of a and b is: "  << product(a,b);
+    cout << "The product of a and b is: "  << product(a,b);
+    cout << "The product of a and b is: "  << product(a,b);
+    cout << "The product of a and b is: "  << product(a,b);
     cout << "The product of a and b is: "  << product(a,b);
     
     return 0;
