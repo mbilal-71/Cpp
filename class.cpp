@@ -616,21 +616,36 @@ union money // better memory usage // it allows to share only data of one
 
 // 22.[Static Variable]:
 
-inline int product(int a, int b){
-    static int c = 0;
-    c = c + 1;
-    return a*b+c;
-}
+//     int product(int a, int b){ // not use with inline
+//     static int c = 0; 
+//     c = c + 1; // next time when this function run it value will be retained. if c becomes equal to 1. next time will initiate from 1.
+//     return a*b+c;
+// }
 
-int main(){
-    int a,b;
-    cout << "Enter value of a and b" << endl;
-    cin >> a >> b;
-    cout << "The product of a and b is: "  << product(a,b);
-    cout << "The product of a and b is: "  << product(a,b);
-    cout << "The product of a and b is: "  << product(a,b);
-    cout << "The product of a and b is: "  << product(a,b);
-    cout << "The product of a and b is: "  << product(a,b);
+// int main(){
+//     int a,b;
+//     cout << "Enter value of a and b" << endl;
+//     cin >> a >> b;
+//     cout << "The product of a and b is: "  << product(a,b);
+//     cout << "The product of a and b is: "  << product(a,b);
+//     cout << "The product of a and b is: "  << product(a,b);
+//     cout << "The product of a and b is: "  << product(a,b);
+//     cout << "The product of a and b is: "  << product(a,b);
     
-    return 0;
-}
+//     return 0;
+// }
+
+// 23. [Default Argument]:
+
+// float moneyReceived(int currentMoney, float factor=1.04){
+// return currentMoney * factor;
+// }
+
+// int main(){
+//     int money = 100000;
+//     cout << "if you have " << money << "in your account. You will receive " << moneyReceived(money) <<  " Rs after 1 year" <<endl;
+//     cout << "For VIP: if you have " << money << "in your account. You will receive " << moneyReceived(money, 1.1) <<  " Rs after 1 year";
+//     // if we don't give value in params. function will use default value.
+//     return 0;
+// }
+
