@@ -680,22 +680,22 @@ union money // better memory usage // it allows to share only data of one
 
 // Fibonacci Sequence:
 
-int fib(int n){
-    if (n<2){
-        return 1;
-    }
-  return fib(n-1) + fib(n-2);
-}
+// int fib(int n){
+//     if (n<2){
+//         return 1;
+//     }
+//   return fib(n-1) + fib(n-2);
+// }
 
-int main(){
+// int main(){
     
-int num;
-cout << "Enter a number" << endl;
-cin >> num;
-cout << "The term in fibonacci sequence at index " <<num << " is: " << fib(num);
+// int num;
+// cout << "Enter a number" << endl;
+// cin >> num;
+// cout << "The term in fibonacci sequence at index " <<num << " is: " << fib(num);
 
-    return 0;
-}
+//     return 0;
+// }
 
 //fib(5)= fib(4) + fib(3) ==> 5+3 = 8
 //fib(4)= fib(3) + fib(2) ==> 3+2 = 5
@@ -703,3 +703,39 @@ cout << "The term in fibonacci sequence at index " <<num << " is: " << fib(num);
 //fib(2)= fib(1) + fib(0) ==> 1+1 = 2
 //fib(1) = 1
 //fib(0) = 1
+
+// 25. [Function Overloading]:
+// c++ will analyze params and run function according to arguments
+
+int sum(int a,int b){
+     return a+b;
+}
+
+int sum(int a,int b,int c){
+     return a+b+c;
+}
+
+//volume of cylinder:
+
+int volume(double r, int h){
+    return (3.14 * r * r * h);
+}
+//volume of cube:
+int volume(int a){
+    return (a*a*a);
+}
+//volume of rectangle:
+int volume(int l, int w,int h){
+    return (l*w*h);
+}
+
+int main(){
+    
+cout << sum(6,9) << endl;
+cout << sum(6,9,5) << endl;
+cout << volume(3,6) << endl;
+cout << volume(3) << endl;
+cout << volume(3,6,9) << endl;
+
+    return 0;
+}
