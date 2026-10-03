@@ -707,35 +707,35 @@ union money // better memory usage // it allows to share only data of one
 // 25. [Function Overloading]:
 // c++ will analyze params and run function according to arguments
 
-int sum(int a,int b){
-     return a+b;
-}
+// int sum(int a,int b){
+//      return a+b;
+// }
 
-int sum(int a,int b,int c){
-     return a+b+c;
-}
+// int sum(int a,int b,int c){
+//      return a+b+c;
+// }
 
-//volume of cylinder:
+// //volume of cylinder:
 
-int volume(double r, int h){
-    return (3.14 * r * r * h);
-}
-//volume of cube:
-int volume(int a){
-    return (a*a*a);
-}
-//volume of rectangle:
-int volume(int l, int w,int h){
-    return (l*w*h);
-}
+// int volume(double r, int h){
+//     return (3.14 * r * r * h);
+// }
+// //volume of cube:
+// int volume(int a){
+//     return (a*a*a);
+// }
+// //volume of rectangle:
+// int volume(int l, int w,int h){
+//     return (l*w*h);
+// }
 
-int main(){
+// int main(){
     
-cout << sum(6,9) << endl;
-cout << sum(6,9,5) << endl;
-cout << volume(3,6) << endl;
-cout << volume(3) << endl;
-cout << volume(3,6,9) << endl;
+// cout << sum(6,9) << endl;
+// cout << sum(6,9,5) << endl;
+// cout << volume(3,6) << endl;
+// cout << volume(3) << endl;
+// cout << volume(3,6,9) << endl;
 
-    return 0;
-}
+//     return 0;
+// }
