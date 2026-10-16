@@ -738,5 +738,6 @@ int main(){
 // cout << volume(3,6,9) << endl;
 cout << volume(3,6,9) << endl;
 cout << volume(3,6,9) << endl;
+cout << volume(3,6,9) << endl;
     return 0;
 }
