@@ -32,6 +32,7 @@ int main()
     percentage = (obtainedMarks/totalMarks)*100;
 
     cout << "Percentage is: " << percentage;
+    cout << "Percentage is: " << percentage;
 
     return 0;
 }
