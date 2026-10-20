@@ -33,6 +33,8 @@ int main()
 
     cout << "Percentage is: " << percentage;
     cout << "Percentage is: " << percentage;
+    cout << "Percentage is: " << percentage;
+    
 
     return 0;
 }
