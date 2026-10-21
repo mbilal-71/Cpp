@@ -73,7 +73,7 @@ using namespace std;
 // cout << y; //output 455
 
 // 7.[TypeCasting]:
-
+// int main(){
 //    int a = 45;
 //    float b= 45.46;
 //    int c = int(b);
@@ -83,7 +83,8 @@ using namespace std;
 //    cout << c <<endl;
 //    cout << a+b <<endl;
 //    cout << a+ int(b) <<endl;
-
+//    return 0;
+}
 // 8.[Constants];
 
 //   const int a = 35;
@@ -456,12 +457,12 @@ using namespace std;
 //     float salary;
 // } emp;
 
-union money // better memory usage // it allows to share only data of one
-{
-    int id;
-    char car;
-    float pounds;
-};
+// union money // better memory usage // it allows to share only data of one
+// {
+//     int id;
+//     char car;
+//     float pounds;
+// };
 
 // int sum(int a, int b)
 // {
@@ -715,29 +716,29 @@ union money // better memory usage // it allows to share only data of one
 //      return a+b+c;
 // }
 
-// //volume of cylinder:
+// // //volume of cylinder:
 
-int volume(double r, int h){
-    return (3.14 * r * r * h);
-}
-//volume of cube:
-int volume(int a){
-    return (a*a*a);
-}
-//volume of rectangle:
-int volume(int l, int w,int h){
-    return (l*w*h);
-}
+// int volume(double r, int h){
+//     return (3.14 * r * r * h);
+// }
+// //volume of cube:
+// int volume(int a){
+//     return (a*a*a);
+// }
+// //volume of rectangle:
+// int volume(int l, int w,int h){
+//     return (l*w*h);
+// }
 
-int main(){
+// int main(){
     
 // cout << sum(6,9) << endl;
 // cout << sum(6,9,5) << endl;
 // cout << volume(3,6) << endl;
 // cout << volume(3) << endl;
 // cout << volume(3,6,9) << endl;
-cout << volume(3,6,9) << endl;
-cout << volume(3,6,9) << endl;
-cout << volume(3,6,9) << endl;
-    return 0;
-}
+// cout << volume(3,6,9) << endl;
+// cout << volume(3,6,9) << endl;
+// cout << volume(3,6,9) << endl;
+//     return 0;
+// }
