@@ -83,6 +83,7 @@ using namespace std;
 //    cout << c <<endl;
 //    cout << a+b <<endl;
 //    cout << a+ int(b) <<endl;
+//    cout << a+ int(b) <<endl;
 //    return 0;
 }
 // 8.[Constants];

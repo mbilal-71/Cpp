@@ -42,6 +42,15 @@ int marks=40;
         cout << "C";
     else
     cout << "F";    
+int marks=40;
+    if(marks>=85)
+        cout << "A";
+    else if (marks>=70)
+        cout << "B";
+    else if (marks>=50)
+        cout << "C";
+    else
+    cout << "F";    
 
     return 0;
 }
