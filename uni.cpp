@@ -57,36 +57,62 @@ int main()
 
 // }
 
-string fruit;
-int choice;
-cout << "Enter your fav fruit" << endl;
-cin >> fruit;
+// string fruit;
+// int choice;
+// cout << "Enter your fav fruit" << endl;
+// cin >> fruit;
 
-if (fruit == "mango")
-{
-    choice = 1;
-}
-else if (fruit == "apples")
-{
-    choice = 2;
-}
-else
-{
-    choice = 3;
-}
+// if (fruit == "mango")
+// {
+//     choice = 1;
+// }
+// else if (fruit == "apples")
+// {
+//     choice = 2;
+// }
+// else
+// {
+//     choice = 3;
+// }
 
-switch (choice)
-{
-case 1:
-    cout << "I like mangoes";
-    break;
-case 2:
-    cout << "I like apples";
-    break;
-default:
-    cout << "I like all fruits";
-}
+// switch (choice)
+// {
+// case 1:
+//     cout << "I like mangoes";
+//     break;
+// case 2:
+//     cout << "I like apples";
+//     break;
+// default:
+//     cout << "I like all fruits";
+// }
  
+// int choice;
+// cout << "1. Add  2. Subtract  3. Exit: ";
+// cin >> choice;
+ 
+// switch (choice) {
+//     case 1: cout << "Add selected"; break;
+//     case 2: cout << "Subtract selected"; break;
+//     case 3: cout << "Goodbye"; break;
+//     default: cout << "Invalid choice";
+// }
+
+
+int choice,a,b;
+cout << "1. Add  2. Subtract  3. Mul 4. Div " << endl;
+cout << "Enter value of a and b" << endl;
+cin >> a >> b;
+cout << "Enter your choice: ";
+cin >> choice;
+
+switch(choice){
+    case 1: cout << "a + b is: " << a+b; break;
+    case 2: cout << "a - b is: " << a-b; break;
+    case 3: cout << "a * b is: " << a*b; break;
+    case 4: cout << "a / b is: " << a/b; break;
+    default : cout << "Invalid Choice";
+}
 
     return 0;
 }
