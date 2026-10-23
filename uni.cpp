@@ -33,24 +33,60 @@ int main()
 
     // cout << "Percentage is: " << percentage;
     
-int marks=40;
-    if(marks>=85)
-        cout << "A";
-    else if (marks>=70)
-        cout << "B";
-    else if (marks>=50)
-        cout << "C";
-    else
-    cout << "F";    
-int marks=40;
-    if(marks>=85)
-        cout << "A";
-    else if (marks>=70)
-        cout << "B";
-    else if (marks>=50)
-        cout << "C";
-    else
-    cout << "F";    
+// int marks=40;
+//     if(marks>=85)
+//         cout << "A";
+//     else if (marks>=70)
+//         cout << "B";
+//     else if (marks>=50)
+//         cout << "C";
+//     else
+//     cout << "F";    
+
+// int age;
+// cout << "Enter your age:";
+// cin>>age;
+// switch ((age>=18) && (age<=60))
+// {
+//     case 1:
+//         cout << "You are eligible for driving license";
+//         break;
+//     case 0:
+//     cout << "You are not eligible for driving license";
+//     break;
+
+// }
+
+string fruit;
+int choice;
+cout << "Enter your fav fruit" << endl;
+cin >> fruit;
+
+if (fruit == "mango")
+{
+    choice = 1;
+}
+else if (fruit == "apples")
+{
+    choice = 2;
+}
+else
+{
+    choice = 3;
+}
+
+switch (choice)
+{
+case 1:
+    cout << "I like mangoes";
+    break;
+case 2:
+    cout << "I like apples";
+    break;
+default:
+    cout << "I like all fruits";
+}
+ 
 
     return 0;
 }

@@ -18,7 +18,7 @@ using namespace std;
 
 // 2.[INPUT / OUTPUT]:
 
-// int main()
+int main()
 // {
 //    int num1, num2;
 
@@ -134,11 +134,11 @@ using namespace std;
 // cin>>age;
 // switch ((age>=18) && (age<=60))
 // {
+//     case 1:
+//         cout << "You are eligible for driving license";
+//         break;
 //     case 0:
 //     cout << "You are not eligible for driving license";
-//     break;
-// case 1:
-//     cout << "You are eligible for driving license";
 //     break;
 
 // }
