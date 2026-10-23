@@ -110,7 +110,13 @@ switch(choice){
     case 1: cout << "a + b is: " << a+b; break;
     case 2: cout << "a - b is: " << a-b; break;
     case 3: cout << "a * b is: " << a*b; break;
-    case 4: cout << "a / b is: " << a/b; break;
+    case 4: if (b != 0){
+         cout << "a / b is: " << double(a) / b;
+    }
+    else{ 
+        cout << "Error: Cannot divide by zero.";
+    } break;
+
     default : cout << "Invalid Choice";
 }
 
