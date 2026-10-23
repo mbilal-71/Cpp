@@ -2,7 +2,7 @@
 // using namespace std;
 
 // int main(){
-//     string name = "Muhammad Bilal";   
+//     string name = "Muhammad Bilal";
 //     int age =20;
 //     string semester = "Fall 2026 (2nd)";
 
@@ -10,7 +10,6 @@
 
 //     return 0;
 // }
-
 
 #include <iostream>
 using namespace std;
@@ -32,95 +31,116 @@ int main()
     // percentage = (obtainedMarks/totalMarks)*100;
 
     // cout << "Percentage is: " << percentage;
-    
-// int marks=40;
-//     if(marks>=85)
-//         cout << "A";
-//     else if (marks>=70)
-//         cout << "B";
-//     else if (marks>=50)
-//         cout << "C";
-//     else
-//     cout << "F";    
 
-// int age;
-// cout << "Enter your age:";
-// cin>>age;
-// switch ((age>=18) && (age<=60))
-// {
-//     case 1:
-//         cout << "You are eligible for driving license";
-//         break;
-//     case 0:
-//     cout << "You are not eligible for driving license";
-//     break;
+    // int marks=40;
+    //     if(marks>=85)
+    //         cout << "A";
+    //     else if (marks>=70)
+    //         cout << "B";
+    //     else if (marks>=50)
+    //         cout << "C";
+    //     else
+    //     cout << "F";
 
-// }
+    // int age;
+    // cout << "Enter your age:";
+    // cin>>age;
+    // switch ((age>=18) && (age<=60))
+    // {
+    //     case 1:
+    //         cout << "You are eligible for driving license";
+    //         break;
+    //     case 0:
+    //     cout << "You are not eligible for driving license";
+    //     break;
 
-// string fruit;
-// int choice;
-// cout << "Enter your fav fruit" << endl;
-// cin >> fruit;
+    // }
 
-// if (fruit == "mango")
-// {
-//     choice = 1;
-// }
-// else if (fruit == "apples")
-// {
-//     choice = 2;
-// }
-// else
-// {
-//     choice = 3;
-// }
+    // string fruit;
+    // int choice;
+    // cout << "Enter your fav fruit" << endl;
+    // cin >> fruit;
 
-// switch (choice)
-// {
-// case 1:
-//     cout << "I like mangoes";
-//     break;
-// case 2:
-//     cout << "I like apples";
-//     break;
-// default:
-//     cout << "I like all fruits";
-// }
- 
-// int choice;
-// cout << "1. Add  2. Subtract  3. Exit: ";
-// cin >> choice;
- 
-// switch (choice) {
-//     case 1: cout << "Add selected"; break;
-//     case 2: cout << "Subtract selected"; break;
-//     case 3: cout << "Goodbye"; break;
-//     default: cout << "Invalid choice";
-// }
+    // if (fruit == "mango")
+    // {
+    //     choice = 1;
+    // }
+    // else if (fruit == "apples")
+    // {
+    //     choice = 2;
+    // }
+    // else
+    // {
+    //     choice = 3;
+    // }
 
+    // switch (choice)
+    // {
+    // case 1:
+    //     cout << "I like mangoes";
+    //     break;
+    // case 2:
+    //     cout << "I like apples";
+    //     break;
+    // default:
+    //     cout << "I like all fruits";
+    // }
 
-int choice,a,b;
-cout << "1. Add  2. Subtract  3. Mul 4. Div " << endl;
-cout << "Enter value of a and b" << endl;
-cin >> a >> b;
-cout << "Enter your choice: ";
-cin >> choice;
+    // int choice;
+    // cout << "1. Add  2. Subtract  3. Exit: ";
+    // cin >> choice;
 
-switch(choice){
-    case 1: cout << "a + b is: " << a+b; break;
-    case 2: cout << "a - b is: " << a-b; break;
-    case 3: cout << "a * b is: " << a*b; break;
-    case 4: if (b != 0){
-         cout << "a / b is: " << double(a) / b;
+    // switch (choice) {
+    //     case 1: cout << "Add selected"; break;
+    //     case 2: cout << "Subtract selected"; break;
+    //     case 3: cout << "Goodbye"; break;
+    //     default: cout << "Invalid choice";
+    // }
+
+    // int choice,a,b;
+    // cout << "1. Add  2. Subtract  3. Mul 4. Div " << endl;
+    // cout << "Enter value of a and b" << endl;
+    // cin >> a >> b;
+    // cout << "Enter your choice: ";
+    // cin >> choice;
+
+    // switch(choice){
+    //     case 1: cout << "a + b is: " << a+b; break;
+    //     case 2: cout << "a - b is: " << a-b; break;
+    //     case 3: cout << "a * b is: " << a*b; break;
+    //     case 4: if (b != 0){
+    //          cout << "a / b is: " << double(a) / b;
+    //     }
+    //     else{
+    //         cout << "Error: Cannot divide by zero.";
+    //     } break;
+
+    //     default : cout << "Invalid Choice";
+    // }
+
+    string username = "user";
+    int password = 1234;
+    string Username;
+    int Password;
+    cout << "Enter Username: ";
+    cin >> Username;
+    if (Username == username)
+    {
+        cout << "Enter Password: ";
+        cin >> Password;
+        if (Password == password)
+        {
+            cout << "Login Successful!";
+        }
+        else
+        {
+            cout << "Login Failed! Incorrect Password.";
+        }
     }
-    else{ 
-        cout << "Error: Cannot divide by zero.";
-    } break;
-
-    default : cout << "Invalid Choice";
-}
-
+    else
+    {
+        cout << "\nUser not found!";
+    }
+    return 0;
     return 0;
 }
-
-
