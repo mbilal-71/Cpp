@@ -118,29 +118,122 @@ int main()
     //     default : cout << "Invalid Choice";
     // }
 
-    string username = "user";
-    int password = 1234;
-    string Username;
-    int Password;
-    cout << "Enter Username: ";
-    cin >> Username;
-    if (Username == username)
-    {
-        cout << "Enter Password: ";
-        cin >> Password;
-        if (Password == password)
-        {
-            cout << "Login Successful!";
-        }
-        else
-        {
-            cout << "Login Failed! Incorrect Password.";
-        }
+    // string username = "user";
+    // int password = 1234;
+    // string Username;
+    // int Password;
+    // cout << "Enter Username: ";
+    // cin >> Username;
+    // if (Username == username)
+    // {
+    //     cout << "Enter Password: ";
+    //     cin >> Password;
+    //     if (Password == password)
+    //     {
+    //         cout << "Login Successful!";
+    //     }
+    //     else
+    //     {
+    //         cout << "Login Failed! Incorrect Password.";
+    //     }
+    // }
+    // else
+    // {
+    //     cout << "\nUser not found!";
+    // }
+
+    // int age;
+    // string name;
+
+    // cout << "Enter your age: ";
+    // cin >> age;
+
+    // cin.ignore();
+
+    // cout << "Enter your full name: ";
+    // getline(cin, name);
+
+    // cout << "Age: " << age << endl;
+    // cout << "Name: " << name << endl;
+
+    // int num;
+    // cout << "Enter a number: ";
+    // cin >> num;
+
+    // if (num == 0){
+    //     cout << "Number is Zero";
+    // }
+    // else if (num > 0){
+    //     cout << "Number is positive";
+    // }else{
+    //     cout << "Number is negative";
+    // }
+
+    // int a,b;
+    // cout << "Enter value of a and b: " <<endl;
+    // cin >> a >> b;
+
+    // if(a>b){
+    //     cout << "a is greatest";
+    // }else{
+    //     cout << "b is greatest";
+    // }
+
+    // int marks;
+    // cout << "Enter your marks: ";
+    // cin >> marks;
+
+    // if (marks<0 || marks > 100) {
+    //     cout << "Invalid Marks";
+    // } else if (marks>=80 && marks<=100){
+    //     cout << "Your grade is A";
+    // } else if (marks>=70 && marks<80){
+    //     cout << "Your grade is B";
+    // } else if (marks>=60 && marks<70){
+    //     cout << "Your grade is C";
+    // } else {
+    //     cout << "Your grade is F";
+    // }
+
+    // int units;
+    // cout << "Enter units consumed: ";
+    // cin >> units;
+
+    // if (units < 0){
+    //     cout << "Invalid input! Units cannot be negative.";
+    // }else if (units <= 100){
+    //     cout << "Category: Up to 100 units";
+    // }else if (units <= 300) {
+    //     cout << "Category: 101-300 units";
+    // }else{
+    //     cout << "Category: Above 300 units";
+    // }
+
+    //     int choice;
+    //     cout << "Choices are: 1.Addition 2.Subtraction 3.Multiplication (Enter a number only): ";
+    //     cin >> choice;
+
+    //     if(choice==1){
+    //         cout << "You selected Addition";
+    //     } else if (choice==2){
+    //         cout << "You selected Subtraction";
+    //     } else if (choice==3){
+
+    // }    cout << "You selected Multiplication";
+    //     } else {
+    //         cout << "Invalid choice";
+    //     }
+    double amount, discount, finalAmount;
+    cout << "Enter purchase amount: Rs. ";
+    cin >> amount;
+    if (amount >= 5000){
+        discount = amount * 0.10;
+    } else{
+        discount = 0;
     }
-    else
-    {
-        cout << "\nUser not found!";
-    }
-    return 0;
+    finalAmount = amount - discount;
+    cout << "Purchase Amount: Rs. " << amount << endl;
+    cout << "Discount: Rs. " << discount << endl;
+    cout << "Final Amount: Rs. " << finalAmount << endl;
     return 0;
 }
