@@ -223,6 +223,8 @@ int main()
     //     } else {
     //         cout << "Invalid choice";
     //     }
+
+
     double amount, discount, finalAmount;
     cout << "Enter purchase amount: Rs. ";
     cin >> amount;
@@ -235,5 +237,10 @@ int main()
     cout << "Purchase Amount: Rs. " << amount << endl;
     cout << "Discount: Rs. " << discount << endl;
     cout << "Final Amount: Rs. " << finalAmount << endl;
+    cout << "Final Amount: Rs. " << finalAmount << endl;
+    
+
+
+
     return 0;
 }
