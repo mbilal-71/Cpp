@@ -225,20 +225,25 @@ int main()
     //     }
 
 
-    double amount, discount, finalAmount;
-    cout << "Enter purchase amount: Rs. ";
-    cin >> amount;
-    if (amount >= 5000){
-        discount = amount * 0.10;
-    } else{
-        discount = 0;
-    }
-    finalAmount = amount - discount;
-    cout << "Purchase Amount: Rs. " << amount << endl;
-    cout << "Discount: Rs. " << discount << endl;
-    cout << "Final Amount: Rs. " << finalAmount << endl;
-    cout << "Final Amount: Rs. " << finalAmount << endl;
+    // double amount, discount, finalAmount;
+    // cout << "Enter purchase amount: Rs. ";
+    // cin >> amount;
+    // if (amount >= 5000){
+    //     discount = amount * 0.10;
+    // } else{
+    //     discount = 0;
+    // }
+    // finalAmount = amount - discount;
+    // cout << "Purchase Amount: Rs. " << amount << endl;
+    // cout << "Discount: Rs. " << discount << endl;
+    // cout << "Final Amount: Rs. " << finalAmount << endl;
+    // cout << "Final Amount: Rs. " << finalAmount << endl;
     
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+    string status = (age >= 18)? "Adult" : "Minor";
+    cout << status;
 
 
 
