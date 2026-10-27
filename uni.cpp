@@ -238,13 +238,12 @@ int main()
     // cout << "Discount: Rs. " << discount << endl;
     // cout << "Final Amount: Rs. " << finalAmount << endl;
     // cout << "Final Amount: Rs. " << finalAmount << endl;
-    
     int age;
     cout << "Enter your age: ";
     cin >> age;
-    string status = (age >= 18)? "Adult" : "Minor";
-    cout << status;
 
+    string result = (age>=18)? "Adult" : "Minor";
+    cout << result;
 
 
     return 0;
