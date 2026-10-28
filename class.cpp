@@ -19,7 +19,7 @@ using namespace std;
 // 2.[INPUT / OUTPUT]:
 
 int main()
-// {
+{
 //    int num1, num2;
 
 //    cout << "Enter the value of num1: \n"; // << insertion operator
@@ -85,7 +85,7 @@ int main()
 //    cout << a+ int(b) <<endl;
 //    cout << a+ int(b) <<endl;
 //    return 0;
-}
+// }
 // 8.[Constants];
 
 //   const int a = 35;
@@ -182,7 +182,7 @@ int main()
 // int i;
 // for (int i = 1; i <= 10; i++)
 // {
-//     cout << "i"<< endl;
+//     cout << i << endl;
 // }
 
 // infinite for loop
@@ -190,7 +190,7 @@ int main()
 // int i;
 // for (int i = 1; 3 <= 10; i++)
 // {
-//     cout << "i"<< endl;
+//     cout << "i" << endl;
 // }
 
 // 11.4.[While Loop]:
@@ -446,8 +446,8 @@ int main()
 // (p + i)     =        p        + (i * size of data type)
 //  32 + i     =        32       + (1 * 4) => 36
 
-//     return 0;
-// }
+    return 0;
+}
 
 // 16. [Structure, Union and Enums]:
 
