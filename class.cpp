@@ -227,7 +227,20 @@ int main()
 //     i++;
 // } while (i<=10);
 
-// int i, j;
+// [Nested Loop]:
+
+/*Nested loop mein execution ka order is tarah hota hai:
+
+Outer loop initialize hoga, phir uski condition check ho gi.
+Agar condition true hui, to outer loop body mein enter ho ga aur inner loop initialize hoga.
+Inner loop ki condition check hogi, phir true hone par uski body ka code execute hoga.
+Inner loop ki body execute hone ke baad inner loop ki updation hogi.
+Inner loop ki condition dobara check hogi aur ye process tab tak chalega jab tak condition false nahi ho jati.
+Jab inner loop terminate hoga, to outer loop ki body mein inner loop ke baad wala code execute hoga.
+Phir outer loop ki updation hogi aur uski condition dobara check hogi.
+Ye process tab tak repeat hoga jab tak outer loop ki condition false nahi ho jati.*/
+
+int i, j;
 
 // for (i = 1; i <= 5; i++)
 // {
@@ -237,34 +250,20 @@ int main()
 //     }
 //     cout << endl;
 // }
+
+
 // for (i = 1; i <= 5; i++)
 // {
 //     for (j = 1; j <= 5; j++)
 //     {
-//         cout << j;
-//     }
-//     cout << endl;
-// }
-// for (i = 1; i <= 5; i++)
-// {
-//     for (j = 1; j <= 5; j++)
-//     {
-//         cout << i;
+//         cout << j ;
 //     }
 //     cout << endl;
 // }
 
-// for (i = 5; i >= 1; i--)
+// for (i = 1; i <= 5; i++)
 // {
-//     for (j = 5; j >= 1; j--)
-//     {
-//         cout << j;
-//     }
-//     cout << endl;
-// }
-// for (i = 5; i >= 1; i--)
-// {
-//     for (j = 5; j >= 1; j--)
+//     for (j = 1; j <= 5; j++)
 //     {
 //         cout << i;
 //     }
@@ -273,12 +272,30 @@ int main()
 
 // for (i = 1; i <=5; i++)
 // {
-//     for (j = 5; j >= i; j--)
+//     for (j = 5; j >= 1; j--)
 //     {
-//         cout << " * ";
+//         cout << j;
 //     }
 //     cout << endl;
 // }
+
+// for (i = 5; i >= 1; i--)
+// {
+//     for (j = 5; j >= 1; j--)
+//     {
+//         cout << i;
+//     }
+//     cout << endl;
+// }
+
+for (i = 1; i <=5; i++)
+{
+    for (j = 5; j >= i; j--)
+    {
+        cout << " * ";
+    }
+    cout << endl;
+}
 
 // for (i = 1; i <=5; i++)
 // {
