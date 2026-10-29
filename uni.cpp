@@ -244,6 +244,12 @@ int main()
 
     string result = (age>=18)? "Adult" : "Minor";
     cout << result;
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+
+    string result = (age>=18)? "Adult" : "Minor";
+    cout << result;
 
 
     return 0;
