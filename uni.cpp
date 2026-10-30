@@ -224,7 +224,6 @@ int main()
     //         cout << "Invalid choice";
     //     }
 
-
     // double amount, discount, finalAmount;
     // cout << "Enter purchase amount: Rs. ";
     // cin >> amount;
@@ -245,7 +244,7 @@ int main()
 
     // string result = (age>=18)? "Adult" : "Minor";
     // cout << result;
-   
+
     // int a,b,c;
 
     // cout << "Enter values of a, b & c: ";
@@ -284,53 +283,93 @@ int main()
     //     }
     // }
 
-// int choice;
-// cout << "Choices are following. Select your choice" << endl;
-// cout << "1. Monday 2. Tuesday 3. Wednesday 4. Thursday 5. Friday 6. Saturday 7. Sunday: ";
-// cin >> choice;
-// switch (choice) {
-// case 1: cout << "You selected Monday";
-// break;
-// case 2: cout << "You selected Tuesday";
-// break;
-// case 3: cout << "You selected Wednesday";
-// break;
-// case 4: cout << "You selected Thursday";
-// break;
-// case 5: cout <<"You selected Friday";
-// break;
-// case 6: cout << "You selected Saturday";
-// break;
-// case 7: cout << "You selected Sunday";
-// break;
-// default: cout << "invalid choice";
-// }
+    // int choice;
+    // cout << "Choices are following. Select your choice" << endl;
+    // cout << "1. Monday 2. Tuesday 3. Wednesday 4. Thursday 5. Friday 6. Saturday 7. Sunday: ";
+    // cin >> choice;
+    // switch (choice) {
+    // case 1: cout << "You selected Monday";
+    // break;
+    // case 2: cout << "You selected Tuesday";
+    // break;
+    // case 3: cout << "You selected Wednesday";
+    // break;
+    // case 4: cout << "You selected Thursday";
+    // break;
+    // case 5: cout <<"You selected Friday";
+    // break;
+    // case 6: cout << "You selected Saturday";
+    // break;
+    // case 7: cout << "You selected Sunday";
+    // break;
+    // default: cout << "invalid choice";
+    // }
 
-    double a, b;
-    int choice;
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
-    cout << "1. Add\n2. Subtract\n3. Multiply \n4. Divison \nChoose : ";
+    // double a, b;
+    // int choice;
+    // cout << "Enter two numbers: ";
+    // cin >> a >> b;
+    // cout << "1. Add\n2. Subtract\n3. Multiply\n4. Divison\nChoose : ";
+    // cin >> choice;
+    // switch (choice) {
+    //     case 1:
+    //         cout << "Result: " << a + b << "\n";
+    //         break;
+    //     case 2:
+    //         cout << "Result: " << a - b << "\n";
+    //         break;
+    //     case 3:
+    //         cout << "Result: " << a * b << "\n";
+    //         break;
+    //     case 4:
+    //         if (b != 0) {
+    //             cout << "Result: " << a / b << "\n";
+    //         } else {
+    //             cout << "Cannot divide by zero\n";
+    //         }
+    //         break;
+    //     default:
+    //         cout << "Invalid choice\n";
+    // }
+
+    int choice, age;
+    double price;
+    cout << "1. Standard Ticket (Rs. 500)" << endl;
+    cout << "2. Premium Ticket (Rs. 800)" << endl;
+    cout << "Enter ticket type: ";
     cin >> choice;
     switch (choice) {
-        case 1:
-            cout << "Result: " << a + b << "\n";
-            break;
-        case 2:
-            cout << "Result: " << a - b << "\n";
-            break;
-        case 3:
-            cout << "Result: " << a * b << "\n";
-            break;
-        case 4:
-            if (b != 0) {
-            cout << "Result: " << a / b << "\n";
-            } else {
-            cout << "Cannot divide by zero\n";
+    case 1:
+        price = 500;
+        cout << "Enter your age: ";
+        cin >> age;
+        if (age >= 0 && age <= 120){
+            if (age < 12){
+                price = price * 0.5;
             }
-            break;
-        default:
-            cout << "Invalid choice\n";
+            cout << "Final Price: Rs. " << price << endl;
+        }
+        else{
+            cout << "Invalid age!" << endl;
+        }
+        break;
+    case 2:
+        price = 800;
+        cout << "Enter your age: ";
+        cin >> age;
+        if (age >= 0 && age <= 120){
+            if (age < 12)
+            {
+                price = price * 0.5;
+            }
+            cout << "Final Price: Rs. " << price << endl;
+        }
+        else {
+            cout << "Invalid age!" << endl;
+        }
+        break;
+    default:
+        cout << "Invalid ticket type!" << endl;
     }
 
     return 0;
