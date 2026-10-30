@@ -274,12 +274,12 @@ int main()
     // }else{
     //     if(marks>=80){
     //         if(attendance>=90){
-    //         cout << "You are eligible for Scholorship";
+    //         cout << "You are eligible for Scholarship";
     //         } else {
-    //             cout << "90% of attendance is required for scholorship";
+    //             cout << "90% of attendance is required for scholarship";
     //         }
     //     }else{
-    //         cout << "Minimum 80 marks are required for scholorship";
+    //         cout << "Minimum 80 marks are required for scholarship";
     //     }
     // }
 
@@ -332,45 +332,84 @@ int main()
     //         cout << "Invalid choice\n";
     // }
 
-    int choice, age;
-    double price;
-    cout << "1. Standard Ticket (Rs. 500)" << endl;
-    cout << "2. Premium Ticket (Rs. 800)" << endl;
-    cout << "Enter ticket type: ";
-    cin >> choice;
-    switch (choice) {
-    case 1:
-        price = 500;
-        cout << "Enter your age: ";
-        cin >> age;
-        if (age >= 0 && age <= 120){
-            if (age < 12){
-                price = price * 0.5;
+    // int choice, age;
+    // double price;
+    // cout << "1. Standard Ticket (Rs. 500)" << endl;
+    // cout << "2. Premium Ticket (Rs. 800)" << endl;
+    // cout << "Enter ticket type: ";
+    // cin >> choice;
+    // switch (choice) {
+    // case 1:
+    //     price = 500;
+    //     cout << "Enter your age: ";
+    //     cin >> age;
+    //     if (age >= 0 && age <= 120){
+    //         if (age < 12){
+    //             price = price * 0.5;
+    //         }
+    //         cout << "Final Price: Rs. " << price << endl;
+    //     }
+    //     else{
+    //         cout << "Invalid age!" << endl;
+    //     }
+    //     break;
+    // case 2:
+    //     price = 800;
+    //     cout << "Enter your age: ";
+    //     cin >> age;
+    //     if (age >= 0 && age <= 120){
+    //         if (age < 12)
+    //         {
+    //             price = price * 0.5;
+    //         }
+    //         cout << "Final Price: Rs. " << price << endl;
+    //     }
+    //     else {
+    //         cout << "Invalid age!" << endl;
+    //     }
+    //     break;
+    // default:
+    //     cout << "Invalid ticket type!" << endl;
+    // }
+
+    // double a, b;
+    // int choice;
+    // cout << "Enter two numbers: ";
+    // cin >> a >> b;
+    // cout << "1. Add\n2. Subtract\n3. Multiply\nChoose: ";
+    // cin >> choice;
+    // switch (choice) {
+    //     case 1:
+    //         cout << "Result: " << a + b << "\n";
+    //     case 2:
+    //         cout << "Result: " << a - b << "\n";
+    //         break;
+    //     case 3:
+    //         cout << "Result: " << a * b << "\n";
+    //         break;
+    //     default:
+    //         cout << "Invalid choice\n";
+    // }
+
+    int attendance, marks;
+    cout << "Enter attendance and marks (0-100): ";
+    cin >> attendance >> marks;
+    if (attendance < 0 || attendance > 100 ||
+        marks < 0 || marks > 100) {
+        cout << "Invalid input\n";
+    } else {
+        if (attendance >= 75) {
+            if (marks >= 50) {
+                cout << "Eligible\n";
+            } else {
+                cout << "Not eligible: low marks\n";
             }
-            cout << "Final Price: Rs. " << price << endl;
+        } else {
+            cout << "Not eligible: low attendance\n";
         }
-        else{
-            cout << "Invalid age!" << endl;
-        }
-        break;
-    case 2:
-        price = 800;
-        cout << "Enter your age: ";
-        cin >> age;
-        if (age >= 0 && age <= 120){
-            if (age < 12)
-            {
-                price = price * 0.5;
-            }
-            cout << "Final Price: Rs. " << price << endl;
-        }
-        else {
-            cout << "Invalid age!" << endl;
-        }
-        break;
-    default:
-        cout << "Invalid ticket type!" << endl;
     }
+
+
 
     return 0;
 }
