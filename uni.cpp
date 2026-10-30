@@ -238,19 +238,32 @@ int main()
     // cout << "Discount: Rs. " << discount << endl;
     // cout << "Final Amount: Rs. " << finalAmount << endl;
     // cout << "Final Amount: Rs. " << finalAmount << endl;
-    int age;
-    cout << "Enter your age: ";
-    cin >> age;
 
-    string result = (age>=18)? "Adult" : "Minor";
-    cout << result;
-    int age;
-    cout << "Enter your age: ";
-    cin >> age;
+    // int age;
+    // cout << "Enter your age: ";
+    // cin >> age;
 
-    string result = (age>=18)? "Adult" : "Minor";
-    cout << result;
+    // string result = (age>=18)? "Adult" : "Minor";
+    // cout << result;
+   
+    int a,b,c;
 
+    cout << "Enter values of a, b & c: ";
+    cin >> a >> b >> c;
+
+    if(a>=b){
+        if(a>=c){
+            cout << "Greatest number is: " << a;
+        }else{
+            cout << "Greatest number is: " << c;
+        }
+    }else{
+        if(b>=c){
+            cout << "Greatest number is: " << b;
+        } else{
+            cout << "Greatest number is: " << c;
+        }
+    }
 
     return 0;
 }
