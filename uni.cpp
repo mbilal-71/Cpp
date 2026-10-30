@@ -246,23 +246,91 @@ int main()
     // string result = (age>=18)? "Adult" : "Minor";
     // cout << result;
    
-    int a,b,c;
+    // int a,b,c;
 
-    cout << "Enter values of a, b & c: ";
-    cin >> a >> b >> c;
+    // cout << "Enter values of a, b & c: ";
+    // cin >> a >> b >> c;
 
-    if(a>=b){
-        if(a>=c){
-            cout << "Greatest number is: " << a;
-        }else{
-            cout << "Greatest number is: " << c;
-        }
-    }else{
-        if(b>=c){
-            cout << "Greatest number is: " << b;
-        } else{
-            cout << "Greatest number is: " << c;
-        }
+    // if(a>=b){
+    //     if(a>=c){
+    //         cout << "Greatest number is: " << a;
+    //     }else{
+    //         cout << "Greatest number is: " << c;
+    //     }
+    // }else{
+    //     if(b>=c){
+    //         cout << "Greatest number is: " << b;
+    //     } else{
+    //         cout << "Greatest number is: " << c;
+    //     }
+    // }
+
+    // int marks, attendance;
+
+    // cout << "Enter your Marks and Attendance: ";
+    // cin >> marks >> attendance;
+
+    // if(marks<0 || marks > 100 || attendance<0 || attendance >100){
+    //     cout << "Invalid inputs";
+    // }else{
+    //     if(marks>=80){
+    //         if(attendance>=90){
+    //         cout << "You are eligible for Scholorship";
+    //         } else {
+    //             cout << "90% of attendance is required for scholorship";
+    //         }
+    //     }else{
+    //         cout << "Minimum 80 marks are required for scholorship";
+    //     }
+    // }
+
+// int choice;
+// cout << "Choices are following. Select your choice" << endl;
+// cout << "1. Monday 2. Tuesday 3. Wednesday 4. Thursday 5. Friday 6. Saturday 7. Sunday: ";
+// cin >> choice;
+// switch (choice) {
+// case 1: cout << "You selected Monday";
+// break;
+// case 2: cout << "You selected Tuesday";
+// break;
+// case 3: cout << "You selected Wednesday";
+// break;
+// case 4: cout << "You selected Thursday";
+// break;
+// case 5: cout <<"You selected Friday";
+// break;
+// case 6: cout << "You selected Saturday";
+// break;
+// case 7: cout << "You selected Sunday";
+// break;
+// default: cout << "invalid choice";
+// }
+
+    double a, b;
+    int choice;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    cout << "1. Add\n2. Subtract\n3. Multiply \n4. Divison \nChoose : ";
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            cout << "Result: " << a + b << "\n";
+            break;
+        case 2:
+            cout << "Result: " << a - b << "\n";
+            break;
+        case 3:
+            cout << "Result: " << a * b << "\n";
+            break;
+        case 4:
+            if (b != 0) {
+            cout << "Result: " << a / b << "\n";
+            } else {
+            cout << "Cannot divide by zero\n";
+            }
+            break;
+        default:
+            cout << "Invalid choice\n";
     }
 
     return 0;
