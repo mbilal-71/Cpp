@@ -406,6 +406,7 @@ int main()
             }
         } else {
             cout << "Not eligible: low attendance\n";
+            cout << "Not eligible: low attendance\n";
         }
     }
 
