@@ -391,25 +391,69 @@ int main()
     //         cout << "Invalid choice\n";
     // }
 
-    int attendance, marks;
-    cout << "Enter attendance and marks (0-100): ";
-    cin >> attendance >> marks;
-    if (attendance < 0 || attendance > 100 ||
-        marks < 0 || marks > 100) {
-        cout << "Invalid input\n";
-    } else {
-        if (attendance >= 75) {
-            if (marks >= 50) {
-                cout << "Eligible\n";
-            } else {
-                cout << "Not eligible: low marks\n";
-            }
-        } else {
-            cout << "Not eligible: low attendance\n";
+    // int attendance, marks;
+    // cout << "Enter attendance and marks (0-100): ";
+    // cin >> attendance >> marks;
+    // if (attendance < 0 || attendance > 100 ||
+    //     marks < 0 || marks > 100) {
+    //     cout << "Invalid input\n";
+    // } else {
+    //     if (attendance >= 75) {
+    //         if (marks >= 50) {
+    //             cout << "Eligible\n";
+    //         } else {
+    //             cout << "Not eligible: low marks\n";
+    //         }
+    //     } else {
+    //         cout << "Not eligible: low attendance\n";
+    //     }
+    // }
+
+
+    int pin;
+    int correctPin = 1234;
+    int attempts = 0;
+
+    while (pin != correctPin && attempts < 3)
+    {
+        cout << "Enter your PIN: ";
+        cin >> pin;
+
+        attempts++;
+
+        if (pin == correctPin)
+        {
+            cout << "Correct PIN! Access Granted." << endl;
+        }
+        else
+        {
+            cout << "Incorrect PIN!" << endl;
         }
     }
 
+    if (pin != correctPin)
+    {
+        cout << "Your card has been blocked!" << endl;
+    }
 
+
+    // int pin = 0;
+    // int correctPin = 1234;
+    // int attempts = 0;
+
+    // while (pin != correctPin && attempts < 3)
+    // {
+    //     cout << "Enter your PIN: ";
+    //     cin >> pin;
+
+    //     attempts++;
+    // }
+
+    // while (pin != correctPin)
+    // {
+    //     cout << "Your card has been blocked!" << endl;
+    //     break;
+    // }
 
     return 0;
 }
