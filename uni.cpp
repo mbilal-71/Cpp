@@ -411,31 +411,31 @@ int main()
     // }
 
 
-    int pin;
-    int correctPin = 1234;
-    int attempts = 0;
+    // int pin;
+    // int correctPin = 1234;
+    // int attempts = 0;
 
-    while (pin != correctPin && attempts < 3)
-    {
-        cout << "Enter your PIN: ";
-        cin >> pin;
+    // while (pin != correctPin && attempts < 3)
+    // {
+    //     cout << "Enter your PIN: ";
+    //     cin >> pin;
 
-        if (pin == correctPin)
-        {
-            cout << "Correct PIN! Access Granted." << endl;
-        }
-        else
-        {
-            cout << "Incorrect PIN!" << endl;
-        }
-        
-        attempts++;
-    }
+    //     if (pin == correctPin)
+    //     {
+    //         cout << "Correct PIN! Access Granted." << endl;
+    //     }
+    //     else
+    //     {
+    //         cout << "Incorrect PIN!" << endl;
+    //     }
 
-    if (pin != correctPin)
-    {
-        cout << "Your card has been blocked!" << endl;
-    }
+    //     attempts++;
+    // }
+
+    // if (pin != correctPin)
+    // {
+    //     cout << "Your card has been blocked!" << endl;
+    // }
 
 
     // int pin = 0;
@@ -455,6 +455,25 @@ int main()
     //     cout << "Your card has been blocked!" << endl;
     //     break;
     // }
+
+    int pin = 0;
+    int correctPin = 1234;
+    int attempts = 0;
+
+    while (pin != correctPin && attempts < 3)
+    {
+        cout << "Enter your PIN: ";
+        cin >> pin;
+  
+        
+        while (pin != correctPin && attempts == 2)
+        {
+            cout << "Your card has been blocked!" << endl;
+            break;
+        }
+        attempts++;
+
+    }
 
     return 0;
 }
