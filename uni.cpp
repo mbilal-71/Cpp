@@ -438,7 +438,7 @@ int main()
     // }
 
 
-    // int pin = 0;
+    // int pin;
     // int correctPin = 1234;
     // int attempts = 0;
 
@@ -474,6 +474,23 @@ int main()
         attempts++;
 
     }
+
+    // int pin,attempts=0;
+    // int correctPin=1234;
+
+    // while (pin!=correctPin && attempts<3){
+    //    cout << "Enter Pin: ";
+    //    cin >> pin;
+    //    attempts++;
+
+    // while(pin!=correctPin&&attempts==3)
+    // }
+
+    // if(pin!=correctPin){
+    //     cout << "Your card has been blocked";
+    // }
+    
+   
 
     return 0;
 }
