@@ -391,24 +391,24 @@ int main()
     //         cout << "Invalid choice\n";
     // }
 
-    int attendance, marks;
-    cout << "Enter attendance and marks (0-100): ";
-    cin >> attendance >> marks;
-    if (attendance < 0 || attendance > 100 ||
-        marks < 0 || marks > 100) {
-        cout << "Invalid input\n";
-    } else {
-        if (attendance >= 75) {
-            if (marks >= 50) {
-                cout << "Eligible\n";
-            } else {
-                cout << "Not eligible: low marks\n";
-            }
-        } else {
-            cout << "Not eligible: low attendance\n";
-            cout << "Not eligible: low attendance\n";
-        }
-    }
+    // int attendance, marks;
+    // cout << "Enter attendance and marks (0-100): ";
+    // cin >> attendance >> marks;
+    // if (attendance < 0 || attendance > 100 ||
+    //     marks < 0 || marks > 100) {
+    //     cout << "Invalid input\n";
+    // } else {
+    //     if (attendance >= 75) {
+    //         if (marks >= 50) {
+    //             cout << "Eligible\n";
+    //         } else {
+    //             cout << "Not eligible: low marks\n";
+    //         }
+    //     } else {
+    //         cout << "Not eligible: low attendance\n";
+    //         cout << "Not eligible: low attendance\n";
+    //     }
+    // }
 
 
     int pin;
@@ -420,8 +420,6 @@ int main()
         cout << "Enter your PIN: ";
         cin >> pin;
 
-        attempts++;
-
         if (pin == correctPin)
         {
             cout << "Correct PIN! Access Granted." << endl;
@@ -430,6 +428,8 @@ int main()
         {
             cout << "Incorrect PIN!" << endl;
         }
+        
+        attempts++;
     }
 
     if (pin != correctPin)
