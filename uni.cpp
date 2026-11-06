@@ -456,24 +456,24 @@ int main()
     //     break;
     // }
 
-    int pin = 0;
-    int correctPin = 1234;
-    int attempts = 0;
+    // int pin = 0;
+    // int correctPin = 1234;
+    // int attempts = 0;
 
-    while (pin != correctPin && attempts < 3)
-    {
-        cout << "Enter your PIN: ";
-        cin >> pin;
+    // while (pin != correctPin && attempts < 3)
+    // {
+    //     cout << "Enter your PIN: ";
+    //     cin >> pin;
   
         
-        while (pin != correctPin && attempts == 2)
-        {
-            cout << "Your card has been blocked!" << endl;
-            break;
-        }
-        attempts++;
+    //     while (pin != correctPin && attempts == 2)
+    //     {
+    //         cout << "Your card has been blocked!" << endl;
+    //         break;
+    //     }
+    //     attempts++;
 
-    }
+    // }
 
     // int pin,attempts=0;
     // int correctPin=1234;
@@ -490,6 +490,15 @@ int main()
     //     cout << "Your card has been blocked";
     // }
     
+    int amount, total = 0;
+    cin >> amount;
+    while (amount != -1) {
+        total += amount;
+        cin >> amount;
+    }
+    cout << "Total = " << total << '\n';
+    return 0;
+
    
 
     return 0;
