@@ -490,16 +490,65 @@ int main()
     //     cout << "Your card has been blocked";
     // }
     
-    int amount, total = 0;
-    cin >> amount;
-    while (amount != -1) {
-        total += amount;
-        cin >> amount;
-    }
-    cout << "Total = " << total << '\n';
-    return 0;
+    // int amount, total = 0;
+    // cin >> amount;
+    // while (amount != -1) {
+    //     total += amount;
+    //     cin >> amount;
+    // }
+    // cout << "Total = " << total << '\n';
+    
 
-   
+//    int i=5;
+
+//    while(i<5){
+//     cout << i;
+//     i= i+1;
+//    }
+
+
+// do
+// {
+//     cout << i;
+//     i = i + 1;
+// }
+// while (i < 5);
+
+
+    int mark;
+    int passCount = 0;
+    int failCount = 0;
+    int invalidCount = 0;
+
+    cout << "Enter student marks (-1 to stop): ";
+    cin >> mark;
+
+    while (mark != -1)
+    {
+        if (mark < 0 || mark > 100)
+        {
+            cout << "Invalid Marks!" << endl;
+            invalidCount++;
+        }
+        else if (mark < 50 && mark>0)
+        {
+            cout << "Fail" << endl;
+            failCount++;
+        }
+        else
+        {
+            cout << "Pass" << endl;
+            passCount++;
+        }
+
+        cout << "Enter next student's marks (-1 to stop): ";
+        cin >> mark;
+    }
+
+    cout << "Total Passed Students: " << passCount << endl;
+    cout << "Total Failed Students: " << failCount << endl;
+    cout << "Total Invalid Marks: " << invalidCount << endl;
+
 
     return 0;
 }
