@@ -515,39 +515,57 @@ int main()
 // while (i < 5);
 
 
+    // int mark;
+    // int passCount = 0;
+    // int failCount = 0;
+    // int invalidCount = 0;
+
+    // cout << "Enter student marks (-1 to stop): ";
+    // cin >> mark;
+
+    // while (mark != -1)
+    // {
+    //     if (mark < 0 || mark > 100)
+    //     {
+    //         cout << "Invalid Marks!" << endl;
+    //         invalidCount++;
+    //     }
+    //     else if (mark < 50)
+    //     {
+    //         cout << "Fail" << endl;
+    //         failCount++;
+    //     }
+    //     else
+    //     {
+    //         cout << "Pass" << endl;
+    //         passCount++;
+    //     }
+
+    //     cout << "Enter next student's marks (-1 to stop): ";
+    //     cin >> mark;
+    // }
+    
+    // cout << "Total Passed Students: " << passCount << endl;
+    // cout << "Total Failed Students: " << failCount << endl;
+    // cout << "Total Invalid Marks: " << invalidCount << endl;
+
+
+    // int i, num, rows;
+    // cout << "Enter a number for which you want to print Table: ";
+    // cin >> num;
+    // cout << "Enter how many roes of table you want to print: ";
+    // cin >> rows;
+
+    // for(i=1;i<=rows;i++){
+    //     cout << num << " * " << i <<  " = " << num * i << endl;
+    // }
+
     int mark;
-    int passCount = 0;
-    int failCount = 0;
-    int invalidCount = 0;
-
-    cout << "Enter student marks (-1 to stop): ";
-    cin >> mark;
-
-    while (mark != -1)
-    {
-        if (mark < 0 || mark > 100)
-        {
-            cout << "Invalid Marks!" << endl;
-            invalidCount++;
-        }
-        else if (mark < 50 && mark>0)
-        {
-            cout << "Fail" << endl;
-            failCount++;
-        }
-        else
-        {
-            cout << "Pass" << endl;
-            passCount++;
-        }
-
-        cout << "Enter next student's marks (-1 to stop): ";
+    do {
+        cout << "Enter a mark (0-100): ";
         cin >> mark;
-    }
-
-    cout << "Total Passed Students: " << passCount << endl;
-    cout << "Total Failed Students: " << failCount << endl;
-    cout << "Total Invalid Marks: " << invalidCount << endl;
+    } while (mark < 0 || mark > 100);
+    cout << "Accepted: " << mark << '\n';
 
 
     return 0;
