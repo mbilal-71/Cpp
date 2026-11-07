@@ -560,13 +560,60 @@ int main()
     //     cout << num << " * " << i <<  " = " << num * i << endl;
     // }
 
-    int mark;
-    do {
-        cout << "Enter a mark (0-100): ";
-        cin >> mark;
-    } while (mark < 0 || mark > 100);
-    cout << "Accepted: " << mark << '\n';
+    // int mark;
+    // do {
+    //     cout << "Enter a mark (0-100): ";
+    //     cin >> mark;
+    // } while (mark < 0 || mark > 100);
+    // cout << "Accepted: " << mark << '\n';
 
+
+    // int mark;
+    // int passCount = 0;
+    // int failCount = 0;
+
+    // cout << "Enter student marks (-1 to stop): ";
+    // cin >> mark;
+
+    // while (mark != -1)
+    // {
+    //     if (mark < 0 || mark > 100)
+    //     {
+    //         cout << "Invalid Mark!" << endl;
+    //     }
+    //     else if (mark >= 50)
+    //     {
+    //         cout << "Pass" << endl;
+    //         passCount++;
+    //     }
+    //     else
+    //     {
+    //         cout << "Fail" << endl;
+    //         failCount++;
+    //     }
+
+    //     cout << "\nEnter next student's marks (-1 to stop): ";
+    //     cin >> mark;
+    // }
+
+    
+    // cout << "Total Passes: " << passCount << endl;
+    // cout << "Total Failures: " << failCount << endl;
+
+    int mark;
+    int attempts = 0;
+
+    do
+    {
+        cout << "Enter marks (0-100): ";
+        cin >> mark;
+
+        attempts++;
+
+    } while (mark < 0 || mark > 100);
+
+    cout << "\nAccepted Marks: " << mark << endl;
+    cout << "Total Attempts: " << attempts << endl;
 
     return 0;
 }
