@@ -491,6 +491,7 @@ int main()
     // }
     
     int amount, total = 0;
+    cout << "Enter amount: " << endl;
     cin >> amount;
     while (amount != -1) {
         total += amount;
@@ -600,20 +601,20 @@ int main()
     // cout << "Total Passes: " << passCount << endl;
     // cout << "Total Failures: " << failCount << endl;
 
-    int mark;
-    int attempts = 0;
+    // int mark;
+    // int attempts = 0;
 
-    do
-    {
-        cout << "Enter marks (0-100): ";
-        cin >> mark;
+    // do
+    // {
+    //     cout << "Enter marks (0-100): ";
+    //     cin >> mark;
 
-        attempts++;
+    //     attempts++;
 
-    } while (mark < 0 || mark > 100);
+    // } while (mark < 0 || mark > 100);
 
-    cout << "\nAccepted Marks: " << mark << endl;
-    cout << "Total Attempts: " << attempts << endl;
+    // cout << "\nAccepted Marks: " << mark << endl;
+    // cout << "Total Attempts: " << attempts << endl;
 
     return 0;
 }
