@@ -491,10 +491,11 @@ int main()
     // }
     
     int amount, total = 0;
-    cout << "Enter amount: " << endl;
+    cout << "Enter amount: ";
     cin >> amount;
     while (amount != -1) {
         total += amount;
+        cout << "Enter another amount (put -1 to stop): ";
         cin >> amount;
     }
     cout << "Total = " << total << '\n';
