@@ -490,13 +490,13 @@ int main()
     //     cout << "Your card has been blocked";
     // }
     
-    // int amount, total = 0;
-    // cin >> amount;
-    // while (amount != -1) {
-    //     total += amount;
-    //     cin >> amount;
-    // }
-    // cout << "Total = " << total << '\n';
+    int amount, total = 0;
+    cin >> amount;
+    while (amount != -1) {
+        total += amount;
+        cin >> amount;
+    }
+    cout << "Total = " << total << '\n';
     
 
 //    int i=5;
