@@ -406,7 +406,6 @@ int main()
     //         }
     //     } else {
     //         cout << "Not eligible: low attendance\n";
-    //         cout << "Not eligible: low attendance\n";
     //     }
     // }
 
@@ -487,7 +486,7 @@ int main()
     // }
 
     // if(pin!=correctPin){
-    //     cout << "Your card has been blocked";
+    //     cout << "Your card has been blocked"; 
     // }
     
     int amount, total = 0;
