@@ -495,7 +495,7 @@ int main()
     cin >> amount;
     while (amount != -1) {
         total += amount;
-        cout << "Enter another amount (enter -1 to stop): ";
+        cout << "Enter another amount (put -1 to stop): ";
         cin >> amount;
     }
     cout << "Total = " << total << '\n';
