@@ -435,7 +435,6 @@ int main()
     //     cout << "Your card has been blocked!" << endl;
     // }
 
-
     // int pin;
     // int correctPin = 1234;
     // int attempts = 0;
@@ -447,7 +446,7 @@ int main()
 
     //     attempts++;
     // }
-
+  
     // while (pin != correctPin)
     // {
     //     cout << "Your card has been blocked!" << endl;
@@ -480,23 +479,44 @@ int main()
     //    cout << "Enter Pin: ";
     //    cin >> pin;
     //    attempts++;
-
-    // while(pin!=correctPin&&attempts==3)
     // }
-
     // if(pin!=correctPin){
     //     cout << "Your card has been blocked"; 
     // }
     
-    int amount, total = 0;
-    cout << "Enter amount: ";
-    cin >> amount;
-    while (amount != -1) {
-        total += amount;
-        cout << "Enter another amount (put -1 to stop): ";
-        cin >> amount;
+int pin = 0;
+int correctPin = 1234;
+int attempts = 0;
+
+while (pin != correctPin && attempts < 3)
+{
+    cout << "Enter your PIN: ";
+    cin >> pin;
+
+    while (pin == correctPin)
+    {
+        cout << "Access Granted!" << endl;
+       break;
     }
-    cout << "Total = " << total << '\n';
+
+    while (pin != correctPin && attempts == 2)
+    {
+        cout << "Your card has been blocked!" << endl;
+        break;
+    }
+
+    attempts++;
+}
+
+    // int amount, total = 0;
+    // cout << "Enter amount: ";
+    // cin >> amount;
+    // while (amount != -1) {
+    //     total += amount;
+    //     cout << "Enter another amount (put -1 to stop): ";
+    //     cin >> amount;
+    // }
+    // cout << "Total = " << total << '\n';
     
 
 //    int i=5;
