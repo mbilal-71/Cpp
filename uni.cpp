@@ -488,25 +488,25 @@ int pin = 0;
 int correctPin = 1234;
 int attempts = 0;
 
-while (pin != correctPin && attempts < 3)
-{
-    cout << "Enter your PIN: ";
-    cin >> pin;
+// while (pin != correctPin && attempts < 3)
+// {
+//     cout << "Enter your PIN: ";
+//     cin >> pin;
 
-    while (pin == correctPin)
-    {
-        cout << "Access Granted!" << endl;
-       break;
-    }
+//     while (pin == correctPin)
+//     {
+//         cout << "Access Granted!" << endl;
+//        break;
+//     }
 
-    while (pin != correctPin && attempts == 2)
-    {
-        cout << "Your card has been blocked!" << endl;
-        break;
-    }
+//     while (pin != correctPin && attempts == 2)
+//     {
+//         cout << "Your card has been blocked!" << endl;
+//         break;
+//     }
 
-    attempts++;
-}
+//     attempts++;
+// }
 
     // int amount, total = 0;
     // cout << "Enter amount: ";
@@ -587,7 +587,6 @@ while (pin != correctPin && attempts < 3)
     // } while (mark < 0 || mark > 100);
     // cout << "Accepted: " << mark << '\n';
 
-
     // int mark;
     // int passCount = 0;
     // int failCount = 0;
@@ -620,20 +619,20 @@ while (pin != correctPin && attempts < 3)
     // cout << "Total Passes: " << passCount << endl;
     // cout << "Total Failures: " << failCount << endl;
 
-    // int mark;
-    // int attempts = 0;
+    int mark;
+    int attempts = 0;
 
-    // do
-    // {
-    //     cout << "Enter marks (0-100): ";
-    //     cin >> mark;
+    do
+    {
+        cout << "Enter marks (0-100): ";
+        cin >> mark;
 
-    //     attempts++;
+        attempts++;
 
-    // } while (mark < 0 || mark > 100);
+    } while (mark < 0 || mark > 100);
 
-    // cout << "\nAccepted Marks: " << mark << endl;
-    // cout << "Total Attempts: " << attempts << endl;
+    cout << "\nAccepted Marks: " << mark << endl;
+    cout << "Total Attempts: " << attempts << endl;
 
     return 0;
 }
