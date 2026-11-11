@@ -484,9 +484,9 @@ int main()
     //     cout << "Your card has been blocked"; 
     // }
     
-int pin = 0;
-int correctPin = 1234;
-int attempts = 0;
+// int pin = 0;
+// int correctPin = 1234;
+// int attempts = 0;
 
 // while (pin != correctPin && attempts < 3)
 // {
@@ -619,20 +619,20 @@ int attempts = 0;
     // cout << "Total Passes: " << passCount << endl;
     // cout << "Total Failures: " << failCount << endl;
 
-    int mark;
-    int attempts = 0;
+    // int mark;
+    // int attempts = 0;
 
-    do
-    {
-        cout << "Enter marks (0-100): ";
-        cin >> mark;
+    // do
+    // {
+    //     cout << "Enter marks (0-100, Put -1 to stop): ";
+    //     cin >> mark;
 
-        attempts++;
+    //     attempts++;
 
-    } while (mark < 0 || mark > 100);
+    // } while (mark < 0 || mark > 100);
 
-    cout << "\nAccepted Marks: " << mark << endl;
-    cout << "Total Attempts: " << attempts << endl;
+    // cout << "\nAccepted Marks: " << mark << endl;
+    // cout << "Total Attempts: " << attempts << endl;
 
     return 0;
 }
