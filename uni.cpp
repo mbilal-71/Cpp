@@ -633,7 +633,6 @@ int main()
 
     cout << "\nAccepted Marks: " << mark << endl;
     cout << "Total Attempts: " << attempts << endl;
-    cout << "Total Attempts: " << attempts << endl;
-
+    
     return 0;
 }
