@@ -634,23 +634,66 @@ int main()
     // cout << "\nAccepted Marks: " << mark << endl;
     // cout << "Total Attempts: " << attempts << endl;
 
-    const int SIZE = 5;
-    int marks[SIZE];
-    for (int i = 0; i < SIZE; ++i) {
-        cin >> marks[i];
-    }
-    int total = 0;
-    int smallest = marks[0], largest = marks[0];
-    for (int i = 0; i < SIZE; ++i) {
-        cout << marks[i] << " ";
-        total += marks[i];
-        if (marks[i] < smallest) smallest = marks[i];
-        if (marks[i] > largest) largest = marks[i];
-    }
-    cout << "\nTotal: " << total;
-    cout << "\nAverage: " << static_cast<double>(total) / SIZE;
-    cout << "\nMinimum: " << smallest;
-    cout << "\nMaximum: " << largest << "\n";
+    // const int SIZE = 5;
+    // int marks[SIZE];
+    // for (int i = 0; i < SIZE; ++i) {
+    //     cin >> marks[i];
+    // }
+    // int total = 0;
+    // int smallest = marks[0], largest = marks[0];
+    // for (int i = 0; i < SIZE; ++i) {
+    //     cout << marks[i] << " ";
+    //     total += marks[i];
+    //     if (marks[i] < smallest) smallest = marks[i];
+    //     if (marks[i] > largest) largest = marks[i];
+    // }
+    // cout << "\nTotal: " << total;
+    // cout << "\nAverage: " << static_cast<double>(total) / SIZE;
+    // cout << "\nMinimum: " << smallest;
+    // cout << "\nMaximum: " << largest << "\n";
 
+//     const int size = 5;
+//     int values[size]= {10,20,30,40,50};
+//     int target, foundIndex= -1;
+//     cout << "Enter targeted value you want to know index of: ";
+//     cin>> target;
+
+//     for(int i=1;i<size;i++){
+//         if(values[i]==target){
+//             foundIndex==i;
+//             break;
+//         }
+//     }
+// if(foundIndex==-1){
+//     cout << "index not found";
+// }else{
+//     cout << foundIndex;
+// }
+
+    // const int SIZE = 5;
+    // int values[SIZE] = {12, 7, 25, 7, 30};
+    // int target, foundIndex = -1;
+    // cout << "Enter targeted value you want to know index of: ";
+    // cin >> target;
+    // for (int i = 0; i < SIZE; ++i) {
+    //     if (values[i] == target) {
+    //         foundIndex = i;
+    //         break;
+    //     }
+    // }
+    // if (foundIndex == -1) cout << "Not found\n";
+    // else cout << "Found at index " << foundIndex << "\n";
+
+    // char name[20];
+    // cout << "Enter your name: ";
+    // cin.getline(name, 20);
+    // int length=0;
+    // while (name[length]!='\0')
+    // {
+    //     length++;
+    // }
+    // cout << "Text: " << name <<endl;
+    // cout << "Length: " << length;
+    
     return 0;
 }
