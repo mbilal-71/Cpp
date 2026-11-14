@@ -619,20 +619,38 @@ int main()
     // cout << "Total Passes: " << passCount << endl;
     // cout << "Total Failures: " << failCount << endl;
 
-    int mark;
-    int attempts = 0;
+    // int mark;
+    // int attempts = 0;
 
-    do
-    {
-        cout << "Enter marks (0-100, Put -1 to stop): ";
-        cin >> mark;
+    // do
+    // {
+    //     cout << "Enter marks (0-100, Put -1 to stop): ";
+    //     cin >> mark;
 
-        attempts++;
+    //     attempts++;
 
-    } while (mark < 0 || mark > 100);
+    // } while (mark < 0 || mark > 100);
 
-    cout << "\nAccepted Marks: " << mark << endl;
-    cout << "Total Attempts: " << attempts << endl;
-    
+    // cout << "\nAccepted Marks: " << mark << endl;
+    // cout << "Total Attempts: " << attempts << endl;
+
+    const int SIZE = 5;
+    int marks[SIZE];
+    for (int i = 0; i < SIZE; ++i) {
+        cin >> marks[i];
+    }
+    int total = 0;
+    int smallest = marks[0], largest = marks[0];
+    for (int i = 0; i < SIZE; ++i) {
+        cout << marks[i] << " ";
+        total += marks[i];
+        if (marks[i] < smallest) smallest = marks[i];
+        if (marks[i] > largest) largest = marks[i];
+    }
+    cout << "\nTotal: " << total;
+    cout << "\nAverage: " << static_cast<double>(total) / SIZE;
+    cout << "\nMinimum: " << smallest;
+    cout << "\nMaximum: " << largest << "\n";
+
     return 0;
 }
