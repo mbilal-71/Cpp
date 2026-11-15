@@ -694,6 +694,164 @@ int main()
     // }
     // cout << "Text: " << name <<endl;
     // cout << "Length: " << length;
+
+    // char text[20];
+    // cout << "Enter your text: ";
+    // cin.getline(text,20);
+    // char targetedChar;
+    // cout << "Write a Character you want to find index of: ";
+    // cin >> targetedChar;
+    // int foundIndex= -1;
+
+    // for (int i = 0; text[i]!='\0'; i++)
+    // {
+    //    if(text[i]==targetedChar){
+    //      foundIndex= i;
+    //      break;
+    //    }
+    // }
+    // if(foundIndex==-1){
+    //     cout << "No index found";
+    // }else{
+    //     cout << "Found at index: " << foundIndex;
+    // }
     
+    // int size;
+    // cout << "Enter array size: ";
+    // cin >> size;
+    // int* arr = new int[size];
+    // cout << "Enter elements: ";
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // // }
+    // // delete[] arr;
+    
+    // int size;
+    // cout << "enter size of array: ";
+    // cin >> size;
+    // int* arr= new int[size];
+    // cout << "Enter elements: ";
+    // for(int i=0;i<size;i++){
+    //     cin >> arr[i];
+    // }
+
+    // for(int i=0;i<size;i++){
+    //     cout << arr[i] << " ";
+    // }
+    // delete[] arr;
+
+    // int marks[5];
+    // int total=0 ,passed = 0;
+    // int minimum, maximum;
+    // double average;
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     do
+    //     {
+    //         cout << "Enter marks for student " << i + 1 << ": ";
+    //         cin >> marks[i];
+
+    //         if (marks[i] < 0 || marks[i] > 100)
+    //         {
+    //             cout << "Invalid marks! Enter marks between 0 and 100." << endl;
+    //         }
+
+    //     } while (marks[i] < 0 || marks[i] > 100);
+    // }
+
+    // minimum = marks[0];
+    // maximum = marks[0];
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     total += marks[i];
+
+    //     if (marks[i] >= 50)
+    //     {
+    //         passed++;
+    //     }
+
+    //     if (marks[i] < minimum)
+    //     {
+    //         minimum = marks[i];
+    //     }
+
+    //     if (marks[i] > maximum)
+    //     {
+    //         maximum = marks[i];
+    //     }
+    // }
+
+    // average = (double)total / 5;
+
+    // cout << "\nAll Marks: ";
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << marks[i] << " ";
+    // }
+
+    // cout << "\nTotal Marks: " << total;
+    // cout << "\nAverage Marks: " << average;
+    // cout << "\nMinimum Marks: " << minimum;
+    // cout << "\nMaximum Marks: " << maximum;
+    // cout << "\nPassed Students: " << passed;
+
+    int arr[6];
+    int target, index = -1;
+    int replacement;
+
+    // Input six integers
+    cout << "Enter six integers: ";
+
+    for (int i = 0; i < 6; i++)
+    {
+        cin >> arr[i];
+    }
+
+    // Input search target
+    cout << "Enter number to search: ";
+    cin >> target;
+
+    // Linear Search
+    for (int i = 0; i < 6; i++)
+    {
+        if (arr[i] == target)
+        {
+            index = i;
+            break;
+        }
+    }
+
+    // Check if target is found
+    if (index != -1)
+    {
+        cout << "Number found at index: " << index << endl;
+
+        cout << "Enter replacement value: ";
+        cin >> replacement;
+
+        arr[index] = replacement;
+    }
+    else
+    {
+        cout << "Not found" << endl;
+    }
+
+    // Display updated array
+    cout << "Updated Array: ";
+
+    for (int i = 0; i < 6; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+
     return 0;
 }
