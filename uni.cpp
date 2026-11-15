@@ -803,55 +803,221 @@ int main()
     // cout << "\nMaximum Marks: " << maximum;
     // cout << "\nPassed Students: " << passed;
 
-    int arr[6];
-    int target, index = -1;
-    int replacement;
+    // int arr[6];
+    // int target, index = -1;
+    // int replacement;
 
-    // Input six integers
-    cout << "Enter six integers: ";
+    // // Input six integers
+    // cout << "Enter six integers: ";
 
-    for (int i = 0; i < 6; i++)
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+
+    // // Input search target
+    // cout << "Enter number to search: ";
+    // cin >> target;
+
+    // // Linear Search
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     if (arr[i] == target)
+    //     {
+    //         index = i;
+    //         break;
+    //     }
+    // }
+
+    // // Check if target is found
+    // if (index != -1)
+    // {
+    //     cout << "Number found at index: " << index << endl;
+
+    //     cout << "Enter replacement value: ";
+    //     cin >> replacement;
+
+    //     arr[index] = replacement;
+    // }
+    // else
+    // {
+    //     cout << "Not found" << endl;
+    // }
+
+    // // Display updated array
+    // cout << "Updated Array: ";
+
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+
+
+    // char text[40];
+    // int length = 0;
+    // int vowels = 0;
+
+    // // Input a complete line
+    // cout << "Enter a line: ";
+    // cin.getline(text, 40);
+
+    // // Traverse the character array
+    // for (int i = 0; text[i] != '\0'; i++)
+    // {
+    //     length++;
+
+    //     // Check vowels
+    //     if (text[i] == 'a' || text[i] == 'e' ||
+    //         text[i] == 'i' || text[i] == 'o' ||
+    //         text[i] == 'u' || text[i] == 'A' ||
+    //         text[i] == 'E' || text[i] == 'I' ||
+    //         text[i] == 'O' || text[i] == 'U')
+    //     {
+    //         vowels++;
+    //     }
+    // }
+
+    // // Display results
+    // cout << "\nOriginal Line: " << text;
+    // cout << "\nTotal Characters: " << length;
+    // cout << "\nTotal Vowels: " << vowels;
+
+    //  int numbers[5];
+
+    // // Input array elements
+    // cout << "Enter five numbers: ";
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> numbers[i];
+    // }
+
+    // // Display index and value
+    // cout << "\nOriginal Array:" << endl;
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << "Index " << i << " = " << numbers[i] << endl;
+    // }
+
+    // // Display array in reverse order
+    // cout << "\nReverse Array: ";
+
+    // for (int i = 4; i >= 0; i--)
+    // {
+    //     cout << numbers[i] << " ";
+    // }
+
+    // int arr[6];
+    // int target;
+    // int count = 0;
+
+    // // Input array elements
+    // cout << "Enter six integers: ";
+
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+
+    // // Input search target
+    // cout << "Enter target number: ";
+    // cin >> target;
+
+    // // Search for all matches
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     if (arr[i] == target)
+    //     {
+    //         cout << "Match found at index: " << i << endl;
+    //         count++;
+    //     }
+    // }
+
+    // // Display total matches
+    // cout << "Total matches: " << count << endl;
+
+    // if (count == 0)
+    // {
+    //     cout << "Not found" << endl;
+    // }
+
+    // char text[40];
+    // char target;
+    // int count = 0;
+
+    // cout << "Enter a line: ";
+    // cin.getline(text, 40);
+
+    // cout << "Your line: " << text << endl;
+
+    // cout << "Enter character to search: ";
+    // cin >> target;
+
+    // for (int i = 0; text[i] != '\0'; i++)
+    // {
+    //     if (text[i] == target)
+    //     {
+    //         cout << "Found at index: " << i << endl;
+    //         count++;
+    //     }
+    // }
+
+    // if (count == 0)
+    // {
+    //     cout << "Not found" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Total matches: " << count << endl;
+    // }
+
+
+
+    // Step 1: Declare array and pointer
+    int values[4];
+    int* p = values;
+
+    // Step 2: Input through pointer
+    cout << "Enter 4 integers: ";
+
+    for (int i = 0; i < 4; i++)
     {
-        cin >> arr[i];
+        cin >> *(p + i);
     }
 
-    // Input search target
-    cout << "Enter number to search: ";
-    cin >> target;
+    // Step 3: Display through pointer
+    cout << "Array elements: ";
 
-    // Linear Search
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 4; i++)
     {
-        if (arr[i] == target)
-        {
-            index = i;
-            break;
-        }
+        cout << *(p + i) << " ";
     }
 
-    // Check if target is found
-    if (index != -1)
+    // Step 4: Add 5 to second element
+    *(p + 1) = *(p + 1) + 5;
+
+    cout << "\nUpdated second element: "
+         << values[1] << endl;
+
+    // Step 5: Declare pointer array
+    int* links[4] = {
+        &values[0],
+        &values[1],
+        &values[2],
+        &values[3]
+    };
+
+    // Step 6: Update last element
+    *links[3] = 100;
+
+    // Step 7: Display original array
+    cout << "Final array: ";
+
+    for (int i = 0; i < 4; i++)
     {
-        cout << "Number found at index: " << index << endl;
-
-        cout << "Enter replacement value: ";
-        cin >> replacement;
-
-        arr[index] = replacement;
+        cout << values[i] << " ";
     }
-    else
-    {
-        cout << "Not found" << endl;
-    }
-
-    // Display updated array
-    cout << "Updated Array: ";
-
-    for (int i = 0; i < 6; i++)
-    {
-        cout << arr[i] << " ";
-    }
-
 
     return 0;
 }
