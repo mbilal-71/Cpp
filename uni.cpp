@@ -975,50 +975,58 @@ int main()
 
 
     // Step 1: Declare array and pointer
-    int values[4];
-    int* p = values;
+    // int values[4];
+    // int* p = values;
 
-    // Step 2: Input through pointer
-    cout << "Enter 4 integers: ";
+    // // Step 2: Input through pointer
+    // cout << "Enter 4 integers: ";
 
-    for (int i = 0; i < 4; i++)
-    {
-        cin >> *(p + i);
-    }
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     cin >> *(p + i);
+    // }
 
-    // Step 3: Display through pointer
-    cout << "Array elements: ";
+    // // Step 3: Display through pointer
+    // cout << "Array elements: ";
 
-    for (int i = 0; i < 4; i++)
-    {
-        cout << *(p + i) << " ";
-    }
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     cout << *(p + i) << " ";
+    // }
 
-    // Step 4: Add 5 to second element
-    *(p + 1) = *(p + 1) + 5;
+    // // Step 4: Add 5 to second element
+    // *(p + 1) = *(p + 1) + 5;
 
-    cout << "\nUpdated second element: "
-         << values[1] << endl;
+    // cout << "\nUpdated second element: "
+    //      << values[1] << endl;
 
-    // Step 5: Declare pointer array
-    int* links[4] = {
-        &values[0],
-        &values[1],
-        &values[2],
-        &values[3]
-    };
+    // // Step 5: Declare pointer array
+    // int* links[4] = {
+    //     &values[0],
+    //     &values[1],
+    //     &values[2],
+    //     &values[3]
+    // };
 
-    // Step 6: Update last element
-    *links[3] = 100;
+    // // Step 6: Update last element
+    // *links[3] = 100;
 
-    // Step 7: Display original array
-    cout << "Final array: ";
+    // // Step 7: Display original array
+    // cout << "Final array: ";
 
-    for (int i = 0; i < 4; i++)
-    {
-        cout << values[i] << " ";
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     cout << values[i] << " ";
         
-    }
+    // }
 
+
+    int i=1;
+    int sum=0;
+   do{
+    sum+=i;
+    i++;
+   }while(i<=5);
+   cout << sum;
     return 0;
 }
