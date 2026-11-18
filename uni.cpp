@@ -1021,12 +1021,37 @@ int main()
     // }
 
 
-    int i=1;
-    int sum=0;
-   do{
-    sum+=i;
-    i++;
-   }while(i<=5);
-   cout << sum;
+//     int i=1;
+//     int sum=0;
+//    do{
+//     sum+=i;
+//     i++;
+//    }while(i<=5);
+//    cout << sum;
+
+//     for(int n = 1; n <= 5; n++)
+// {
+//     for(int i = 1; i <= 10; i++)
+//     { 
+//         cout << n * i << " ";
+//     }
+//     cout << endl;
+// }
+
+// for(int i = 1; i <= 3; i++)
+// {
+//     for(int j = 1; j <= 2; j++)
+//     {
+//         cout << i << j << " ";
+//     }
+// }
+
+
+    for(int i=1; i<=5;i++){
+        for(int j=1;j<=i;j++){
+            cout << i;
+        }
+        cout << endl;
+    }
     return 0;
 }
