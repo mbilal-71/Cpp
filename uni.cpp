@@ -657,7 +657,7 @@ int main()
 //     int target, foundIndex= -1;
 //     cout << "Enter targeted value you want to know index of: ";
 //     cin>> target;
-
+ 
 //     for(int i=1;i<size;i++){
 //         if(values[i]==target){
 //             foundIndex==i;
@@ -1038,20 +1038,20 @@ int main()
 //     cout << endl;
 // }
 
-// for(int i = 1; i <= 3; i++)
-// {
-//     for(int j = 1; j <= 2; j++)
-//     {
-//         cout << i << j << " ";
-//     }
-// }
-
-
-    for(int i=1; i<=5;i++){
-        for(int j=1;j<=i;j++){
-            cout << i;
+int bubble;
+int arr[7]= {89,52,100,2,8,69,1};
+    for(int i=0;i<7;i++){
+        for(int j=0;j<6-i;j++){
+            if(arr[j]>arr[j+1]){
+                bubble= arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=bubble;
+            }
         }
-        cout << endl;
     }
+for(int i=0;i<7;i++){
+    cout << arr[i] << " ";
+}
+ 
     return 0;
 }
