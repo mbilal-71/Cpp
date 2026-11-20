@@ -1038,20 +1038,32 @@ int main()
 //     cout << endl;
 // }
 
-int bubble;
-int arr[7]= {89,52,100,2,8,69,1};
-    for(int i=0;i<7;i++){
-        for(int j=0;j<6-i;j++){
-            if(arr[j]>arr[j+1]){
-                bubble= arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=bubble;
-            }
+// int bubble;
+// int arr[7]= {89,52,100,2,8,69,1};
+//     for(int i=0;i<7;i++){
+//         for(int j=0;j<6-i;j++){
+//             if(arr[j]>arr[j+1]){
+//                 bubble= arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=bubble;
+//             }
+//         }
+//     }
+// for(int i=0;i<7;i++){
+//     cout << arr[i] << " ";
+// }
+
+int A[5]={20,40,10,30,50};
+int n=5;
+for(int i=0;i<=n-1;i++){
+    for(int j=0;j<n-i-1;j++){
+        if(A[j]>A[j+1]){
+            swap(A[j], A[j+1]);
         }
     }
-for(int i=0;i<7;i++){
-    cout << arr[i] << " ";
 }
- 
+ for(int i=0;i<=n-1;i++){
+    cout << A[i] << " ";
+ }
     return 0;
 }
