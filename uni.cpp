@@ -1098,7 +1098,7 @@ int arr[5] = {89, 52, 100, 2, 8};
 
         for(int j = i + 1; j < n; j++)
         {
-            if(arr[j] > arr[maxIndex])
+            if(arr[j] < arr[maxIndex])
             {
                 maxIndex = j;
             }
