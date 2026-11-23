@@ -134,8 +134,7 @@ int main()
     {
         for (int j = 0; j < 10; j++)
         {
-            cout << i + (j * 10) << "\t";
-            
+            cout << i + (j * 10) << "\t";            
         }
 
         cout << endl;
