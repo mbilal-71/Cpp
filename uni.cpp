@@ -446,7 +446,7 @@ int main()
 
     //     attempts++;
     // }
-  
+
     // while (pin != correctPin)
     // {
     //     cout << "Your card has been blocked!" << endl;
@@ -461,8 +461,7 @@ int main()
     // {
     //     cout << "Enter your PIN: ";
     //     cin >> pin;
-  
-        
+
     //     while (pin != correctPin && attempts == 2)
     //     {
     //         cout << "Your card has been blocked!" << endl;
@@ -481,32 +480,32 @@ int main()
     //    attempts++;
     // }
     // if(pin!=correctPin){
-    //     cout << "Your card has been blocked"; 
+    //     cout << "Your card has been blocked";
     // }
-    
-// int pin = 0;
-// int correctPin = 1234;
-// int attempts = 0;
 
-// while (pin != correctPin && attempts < 3)
-// {
-//     cout << "Enter your PIN: ";
-//     cin >> pin;
+    // int pin = 0;
+    // int correctPin = 1234;
+    // int attempts = 0;
 
-//     while (pin == correctPin)
-//     {
-//         cout << "Access Granted!" << endl;
-//        break;
-//     }
+    // while (pin != correctPin && attempts < 3)
+    // {
+    //     cout << "Enter your PIN: ";
+    //     cin >> pin;
 
-//     while (pin != correctPin && attempts == 2)
-//     {
-//         cout << "Your card has been blocked!" << endl;
-//         break;
-//     }
+    //     while (pin == correctPin)
+    //     {
+    //         cout << "Access Granted!" << endl;
+    //        break;
+    //     }
 
-//     attempts++;
-// }
+    //     while (pin != correctPin && attempts == 2)
+    //     {
+    //         cout << "Your card has been blocked!" << endl;
+    //         break;
+    //     }
+
+    //     attempts++;
+    // }
 
     // int amount, total = 0;
     // cout << "Enter amount: ";
@@ -517,23 +516,20 @@ int main()
     //     cin >> amount;
     // }
     // cout << "Total = " << total << '\n';
-    
 
-//    int i=5;
+    //    int i=5;
 
-//    while(i<5){
-//     cout << i;
-//     i= i+1;
-//    }
+    //    while(i<5){
+    //     cout << i;
+    //     i= i+1;
+    //    }
 
-
-// do
-// {
-//     cout << i;
-//     i = i + 1;
-// }
-// while (i < 5);
-
+    // do
+    // {
+    //     cout << i;
+    //     i = i + 1;
+    // }
+    // while (i < 5);
 
     // int mark;
     // int passCount = 0;
@@ -564,11 +560,10 @@ int main()
     //     cout << "Enter next student's marks (-1 to stop): ";
     //     cin >> mark;
     // }
-    
+
     // cout << "Total Passed Students: " << passCount << endl;
     // cout << "Total Failed Students: " << failCount << endl;
     // cout << "Total Invalid Marks: " << invalidCount << endl;
-
 
     // int i, num, rows;
     // cout << "Enter a number for which you want to print Table: ";
@@ -615,7 +610,6 @@ int main()
     //     cin >> mark;
     // }
 
-    
     // cout << "Total Passes: " << passCount << endl;
     // cout << "Total Failures: " << failCount << endl;
 
@@ -652,23 +646,23 @@ int main()
     // cout << "\nMinimum: " << smallest;
     // cout << "\nMaximum: " << largest << "\n";
 
-//     const int size = 5;
-//     int values[size]= {10,20,30,40,50};
-//     int target, foundIndex= -1;
-//     cout << "Enter targeted value you want to know index of: ";
-//     cin>> target;
- 
-//     for(int i=1;i<size;i++){
-//         if(values[i]==target){
-//             foundIndex==i;
-//             break;
-//         }
-//     }
-// if(foundIndex==-1){
-//     cout << "index not found";
-// }else{
-//     cout << foundIndex;
-// }
+    //     const int size = 5;
+    //     int values[size]= {10,20,30,40,50};
+    //     int target, foundIndex= -1;
+    //     cout << "Enter targeted value you want to know index of: ";
+    //     cin>> target;
+
+    //     for(int i=1;i<size;i++){
+    //         if(values[i]==target){
+    //             foundIndex==i;
+    //             break;
+    //         }
+    //     }
+    // if(foundIndex==-1){
+    //     cout << "index not found";
+    // }else{
+    //     cout << foundIndex;
+    // }
 
     // const int SIZE = 5;
     // int values[SIZE] = {12, 7, 25, 7, 30};
@@ -715,7 +709,7 @@ int main()
     // }else{
     //     cout << "Found at index: " << foundIndex;
     // }
-    
+
     // int size;
     // cout << "Enter array size: ";
     // cin >> size;
@@ -730,7 +724,7 @@ int main()
     //     cout << arr[i] << " ";
     // // }
     // // delete[] arr;
-    
+
     // int size;
     // cout << "enter size of array: ";
     // cin >> size;
@@ -852,7 +846,6 @@ int main()
     //     cout << arr[i] << " ";
     // }
 
-
     // char text[40];
     // int length = 0;
     // int vowels = 0;
@@ -972,8 +965,6 @@ int main()
     //     cout << "Total matches: " << count << endl;
     // }
 
-
-
     // Step 1: Declare array and pointer
     // int values[4];
     // int* p = values;
@@ -1017,103 +1008,101 @@ int main()
     // for (int i = 0; i < 4; i++)
     // {
     //     cout << values[i] << " ";
-        
+
     // }
 
+    //     int i=1;
+    //     int sum=0;
+    //    do{
+    //     sum+=i;
+    //     i++;
+    //    }while(i<=5);
+    //    cout << sum;
 
-//     int i=1;
-//     int sum=0;
-//    do{
-//     sum+=i;
-//     i++;
-//    }while(i<=5);
-//    cout << sum;
+    //     for(int n = 1; n <= 5; n++)
+    // {
+    //     for(int i = 1; i <= 10; i++)
+    //     {
+    //         cout << n * i << " ";
+    //     }
+    //     cout << endl;
+    // }
 
-//     for(int n = 1; n <= 5; n++)
-// {
-//     for(int i = 1; i <= 10; i++)
-//     { 
-//         cout << n * i << " ";
-//     }
-//     cout << endl;
-// }
+    // int bubble;
+    // int arr[7]= {89,52,100,2,8,69,1};
+    //     for(int i=0;i<7;i++){
+    //         for(int j=0;j<6-i;j++){
+    //             if(arr[j]>arr[j+1]){
+    //                 bubble= arr[j];
+    //                 arr[j]=arr[j+1];
+    //                 arr[j+1]=bubble;
+    //             }
+    //         }
+    //     }
+    // for(int i=0;i<7;i++){
+    //     cout << arr[i] << " ";
+    // }
 
-// int bubble;
-// int arr[7]= {89,52,100,2,8,69,1};
-//     for(int i=0;i<7;i++){
-//         for(int j=0;j<6-i;j++){
-//             if(arr[j]>arr[j+1]){
-//                 bubble= arr[j];
-//                 arr[j]=arr[j+1];
-//                 arr[j+1]=bubble;
-//             }
-//         }
-//     }
-// for(int i=0;i<7;i++){
-//     cout << arr[i] << " ";
-// }
+    // int A[5]={20,40,10,30,50};
+    // int n=5;
+    // for(int i=0;i<=n-1;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         if(A[j]>A[j+1]){
+    //             swap(A[j], A[j+1]);
+    //         }
+    //     }
+    // }
+    //  for(int i=0;i<=n-1;i++){
+    //     cout << A[i] << " ";
+    //  }
 
-// int A[5]={20,40,10,30,50};
-// int n=5;
-// for(int i=0;i<=n-1;i++){
-//     for(int j=0;j<n-i-1;j++){
-//         if(A[j]>A[j+1]){
-//             swap(A[j], A[j+1]);
-//         }
-//     }
-// }
-//  for(int i=0;i<=n-1;i++){
-//     cout << A[i] << " ";
-//  }
+    //  int arr[5] = {50, 20, 40, 10, 30};
 
-//  int arr[5] = {50, 20, 40, 10, 30};
+    //     int n = 5;
 
-//     int n = 5;
+    //     for (int i = 0; i < n - 1; i++)
+    //     {
+    //         for (int j = 0; j < n - i - 1; j++)
+    //         {
+    //             if (arr[j] < arr[j + 1])
+    //             {
+    //                 swap(arr[j], arr[j + 1]);
+    //             }
+    //         }
+    //     }
 
-//     for (int i = 0; i < n - 1; i++)
-//     {
-//         for (int j = 0; j < n - i - 1; j++)
-//         {
-//             if (arr[j] < arr[j + 1])
-//             {
-//                 swap(arr[j], arr[j + 1]);
-//             }
-//         }
-//     }
+    //     cout << "Sorted Array: ";
 
-//     cout << "Sorted Array: ";
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         cout << arr[i] << " ";
+    //     }
 
-//     for (int i = 0; i < n; i++)
-//     {
-//         cout << arr[i] << " ";
-//     }
+    // int arr[5] = {89, 52, 100, 2, 8};
+    //     int n = 5;
+    //     int maxIndex, temp;
 
-// int arr[5] = {89, 52, 100, 2, 8};
-//     int n = 5;
-//     int maxIndex, temp;
+    //     for(int i = 0; i < n - 1; i++)
+    //     {
+    //         maxIndex = i;
 
-//     for(int i = 0; i < n - 1; i++)
-//     {
-//         maxIndex = i;
+    //         for(int j = i + 1; j < n; j++)
+    //         {
+    //             if(arr[j] < arr[maxIndex])
+    //             {
+    //                 maxIndex = j;
+    //             }
+    //         }
 
-//         for(int j = i + 1; j < n; j++)
-//         {
-//             if(arr[j] < arr[maxIndex])
-//             {
-//                 maxIndex = j;
-//             }
-//         }
+    //         temp = arr[i];
+    //         arr[i] = arr[maxIndex];
+    //         arr[maxIndex] = temp;
+    //     }
 
-//         temp = arr[i];
-//         arr[i] = arr[maxIndex];
-//         arr[maxIndex] = temp;
-//     }
-
-//     for(int i = 0; i < n; i++)
-//     {
-//         cout << arr[i] << " ";
-//     }
-
+    //     for(int i = 0; i < n; i++)
+    //     {
+    //         cout << arr[i] << " ";
+    //     }
 
     // int age;
     // string name;
@@ -1129,16 +1118,346 @@ int main()
     // cout << "Age: " << age << endl;
     // cout << "Name: " << name << endl;
 
-    string language;
-    cout << "Enter your favourite Programming Language: ";
-    getline(cin,language);
+    // string language;
+    // cout << "Enter your favourite Programming Language: ";
+    // getline(cin,language);
 
-    while(language!= ""){
-        cout << "Your favourite programming Language is: " << language;
-        cout << "\nEnter another language (press enter stop): ";
-        getline(cin,language);
+    // while(language!= ""){
+    //     cout << "Your favourite programming Language is: " << language;
+    //     cout << "\nEnter another language (press enter stop): ";
+    //     getline(cin,language);
+    // }
+    // cout << "Thank you for your response";
+
+    // int a=30;
+    // a+=10;
+    // cout << "Value of a after a+=10 is: " << a <<endl;
+    // a-=10;
+    // cout << "Value of a after a-=10 is: " << a <<endl;
+    // a*=10;
+    // cout << "Value of a after a*=10 is: " << a <<endl;
+
+    // int x = 10;
+
+    // x += 5;
+    // cout << "After += 5: " << x << endl;
+
+    // x++;
+    // cout << "After increment: " << x << endl;
+
+    // x--;
+    // cout << "After decrement: " << x << endl;
+
+    // int a=8,b=3;
+    // int result = a + b;
+    // cout << "1. " << result << endl;
+
+    // result += 2;
+    // cout << "2. " << result << endl;
+
+    // a++;
+    // cout << "3. " << a << endl;
+
+    // result = a * b;
+    // cout << "4. " << result << endl;
+
+    // int age;
+    //     cout << "Enter age: ";
+    //     cin >> age;
+
+    //     if (age >= 18) {
+    //         cout << "Eligible by age requirement.";
+    //     } else {
+    //         cout << "Not eligible by age requirement.";
+    //     }
+
+    // int choice;
+    //     cout << "Choices are:\n1. Addition\n2. Subtraction\n3. Multiplication\nChoice(Enter a number only): ";
+    //     cin >> choice;
+
+    // double amount, discount, finalAmount;
+    // cout << "Enter purchase amount: Rs. ";
+    // cin >> amount;
+    // if (amount >= 5000) {
+    //     discount = amount * 0.10;
+    // } else {
+    //     discount = 0;
+    // }
+    // finalAmount = amount - discount;
+    // cout << "Purchase Amount: Rs. " << amount << endl;
+    // cout << "Discount: Rs. " << discount << endl;
+    // cout << "Final Amount: Rs. " << finalAmount << endl;
+
+    // int a, b, c;
+    // cout << "Enter three numbers: ";
+    // cin >> a >> b >> c;
+
+    // if (a > b)
+    // {
+    //     if (a > c)
+    //     {
+    //         cout << "a is greater";
+    //     }
+    //     else
+    //     {
+    //         cout << "c is greater: " << c;
+    //     }
+    // }
+    // else
+    // {
+    //     if (b >= c)
+    //     {
+    //         cout << "Greatest number is: " << b;
+    //     }
+    //     else
+    //     {
+    //         cout << "Greatest number is: " << c;
+    //     }
+    // }
+
+    // int age, choice;
+    // double price;
+    // cout << "Choices are following:\n";
+    // cout << "1. Standard ticket Rs.500\n2. Premium ticket price Rs:800\n";
+    // cout << "Enter your choice: ";
+    // cin >> choice;
+
+    // switch (choice)
+    // {
+    // case 1:
+    //     price = 500;
+    //     cout << "Enter your age: ";
+    //     cin >> age;
+    //     if (age > 0 && age < 120)
+    //     {
+    //         if (age < 12)
+    //         {
+    //             price *= 0.5;
+    //             cout << "Final price is: " << price;
+    //         }
+    //         else
+    //         {
+    //             cout << "Full price charged";
+    //         }
+    //     }
+    //     break;
+
+    // case 2:
+    //     price = 800;
+    //     cout << "Enter your age: ";
+    //     cin >> age;
+    //     if (age < 12)
+    //     {
+    //         price *= 0.5;
+    //         cout << "Final price is: " << price;
+    //     }
+    //     else
+    //     {
+    //         cout << "Full price charged";
+    //     }
+    //     break;
+
+    // default:
+    //     cout << "invalid choice";
+    //     break;
+    // }
+
+    // int choice, age;
+    //     double price;
+    //     cout << "1. Standard Ticket (Rs. 500)" << endl;
+    //     cout << "2. Premium Ticket (Rs. 800)" << endl;
+    //     cout << "Enter ticket type: ";
+    //     cin >> choice;
+    //     switch (choice) {
+    //     case 1:
+    //         price = 500;
+    //         cout << "Enter your age: ";
+    //         cin >> age;
+    //         if (age >= 0 && age <= 120) {
+    //             if (age < 12) {
+    //                 price = price * 0.5;
+    //             }
+    //             cout << "Final Price: Rs. " << price << endl;
+    //         } else {
+    //             cout << "Invalid age!" << endl;
+    //         }
+    //         break;
+    //     case 2:
+    //         price = 800;
+    //         cout << "Enter your age: ";
+    //         cin >> age;
+    //         if (age >= 0 && age <= 120) {
+    //             if (age < 12)
+    //             {
+    //                 price = price * 0.5;
+    //             }
+    //             cout << "Final Price: Rs. " << price << endl;
+    //         } else {
+    //             cout << "Invalid age!" << endl;
+    //         }
+    //         break;
+    //     default:
+    //         cout << "Invalid ticket type!" << endl;
+
+    // int marks, income, attendance;
+    // double fee = 50000, rate = 0;
+
+    // cout << "Enter marks, income and attendance: ";
+    // cin >> marks >> income >> attendance;
+
+    // if (marks < 0 || marks > 100 ||
+    //     income < 0 ||
+    //     attendance < 0 || attendance > 100)
+    // {
+
+    //     cout << "Invalid input\n";
+    // }
+    // else
+    // {
+    //     if (marks >= 85)
+    //     {
+    //         if (attendance >= 90)
+    //         {
+    //             if (income <= 40000)
+    //                 rate = 75;
+    //             else
+    //                 rate = 50;
+    //         }
+    //         else
+    //         {
+    //             if (attendance >= 75)
+    //                 rate = 25;
+    //             else
+    //                 rate = 0;
+    //         }
+    //     }
+    //     else
+    //     {
+    //         if (marks >= 70)
+    //         {
+    //             if (attendance >= 75)
+    //             {
+    //                 if (income <= 40000)
+    //                     rate = 50;
+    //                 else
+    //                     rate = 25;
+    //             }
+    //             else
+    //             {
+    //                 rate = 0;
+    //             }
+    //         }
+    //         else
+    //         {
+    //             rate = 0;
+    //         }
+    //     }
+
+    //     double concession = fee * rate / 100;
+    //     double payable = fee - concession;
+
+    //     cout << "Concession percentage: " << rate << "%\n";
+    //     cout << "Concession amount: " << concession << "\n";
+    //     cout << "Fee payable: " << payable << "\n";
+
+    //     if (rate > 0)
+    //         cout << "Fee support approved\n";
+    //     else
+    //         cout << "Not eligible for fee support\n";
+    // }
+
+
+    // int saving, total, day, target, remaining;
+
+    // // Variable Initialization
+    // total = 0;
+    // day = 1;
+    // target = 2000;
+
+    // // Loop for 5 Days
+    // while (day <= 5)
+    // {
+    //     // Input Validation
+    //     do
+    //     {
+    //         cout << "Enter savings for day " << day << ": ";
+    //         cin >> saving;
+
+    //         if (saving < 0)
+    //         {
+    //             cout << "Invalid input! Please enter again.\n";
+    //         }
+
+    //     } while (saving < 0);
+
+    //     // Add Valid Savings
+    //     total = total + saving;
+
+    //     // Increment Day
+    //     day++;
+    // }
+
+    // // Display Total Savings
+    // cout << "\nTotal Savings: Rs. " << total << endl;
+
+    // // Check Savings Target
+    // if (total >= target)
+    // {
+    //     remaining = total - target; 
+
+    //     cout << "You can plan your visit home.\n";
+    //     cout << "Amount left after paying Rs. 2000: Rs. "
+    //          << remaining << endl;
+    // }
+    // else
+    // {
+    //     remaining = target - total;
+
+    //     cout << "Additional amount needed: Rs. "
+    //          << remaining << endl;
+    // }
+
+      int marks[5];
+    int total = 0;
+    int passed = 0;
+    double average;
+
+    // Input Marks of Five Students
+    cout << "Enter marks of five students:\n";
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Student " << i + 1 << ": ";
+        cin >> marks[i];
     }
-    cout << "Thank you for your response";
+
+    // Display Marks and Results
+    cout << "\nStudent Results:\n";
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Student " << i + 1 << " Marks: " << marks[i];
+
+        if (marks[i] >= 50)
+        {
+            cout << " - Pass\n";
+            passed++;
+        }
+        else
+        {
+            cout << " - Needs practice\n";
+        }
+
+        total = total + marks[i];
+    }
+
+    // Calculate Average
+    average = (double)total / 5;
+
+    // Display Final Statistics
+    cout << "\nClass Total: " << total;
+    cout << "\nClass Average: " << average;
+    cout << "\nStudents Passed: " << passed;
 
     return 0;
 }
