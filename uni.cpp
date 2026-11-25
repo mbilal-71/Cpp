@@ -1088,35 +1088,57 @@ int main()
 //         cout << arr[i] << " ";
 //     }
 
-int arr[5] = {89, 52, 100, 2, 8};
-    int n = 5;
-    int maxIndex, temp;
+// int arr[5] = {89, 52, 100, 2, 8};
+//     int n = 5;
+//     int maxIndex, temp;
 
-    for(int i = 0; i < n - 1; i++)
-    {
-        maxIndex = i;
+//     for(int i = 0; i < n - 1; i++)
+//     {
+//         maxIndex = i;
 
-        for(int j = i + 1; j < n; j++)
-        {
-            if(arr[j] < arr[maxIndex])
-            {
-                maxIndex = j;
-            }
-        }
+//         for(int j = i + 1; j < n; j++)
+//         {
+//             if(arr[j] < arr[maxIndex])
+//             {
+//                 maxIndex = j;
+//             }
+//         }
 
-        temp = arr[i];
-        arr[i] = arr[maxIndex];
-        arr[maxIndex] = temp;
+//         temp = arr[i];
+//         arr[i] = arr[maxIndex];
+//         arr[maxIndex] = temp;
+//     }
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+
+
+    // int age;
+    // string name;
+
+    // cout << "Enter your age: ";
+    // cin >> age;
+
+    // cin.ignore();
+
+    // cout << "Enter your full name: ";
+    // getline(cin, name);
+
+    // cout << "Age: " << age << endl;
+    // cout << "Name: " << name << endl;
+
+    string language;
+    cout << "Enter your favourite Programming Language: ";
+    getline(cin,language);
+
+    while(language!= ""){
+        cout << "Your favourite programming Language is: " << language;
+        cout << "\nEnter another language (press enter stop): ";
+        getline(cin,language);
     }
-
-    for(int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-
-
-
-
+    cout << "Thank you for your response";
 
     return 0;
 }

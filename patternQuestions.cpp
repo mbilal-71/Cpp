@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -128,17 +129,18 @@ int main()
     //         cout << i;
     //     }
     //     cout << endl;
-    // }
+//     // }
 
-   for (int i = 1; i <= 10; i++)
-    {
-        for (int j = 0; j < 10; j++)
-        {
-            cout << i + (j * 10) << "\t";            
-        }
+//    for (int i = 1; i <= 10; i++)
+//     {
+//         for (int j = 0; j < 10; j++)
+//         {
+//             cout << i + (j * 10) << "\t";            
+//         }
 
-        cout << endl;
-    }
+//         cout << endl;
+//     }
+
 
     return 0;
 }
