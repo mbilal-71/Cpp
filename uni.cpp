@@ -1417,47 +1417,56 @@ int main()
     //          << remaining << endl;
     // }
 
-      int marks[5];
-    int total = 0;
-    int passed = 0;
-    double average;
+    //   int marks[5];
+    // int total = 0;
+    // int passed = 0;
+    // double average;
 
-    // Input Marks of Five Students
-    cout << "Enter marks of five students:\n";
+    // // Input Marks of Five Students
+    // cout << "Enter marks of five students:\n";
 
-    for (int i = 0; i < 5; i++)
-    {
-        cout << "Student " << i + 1 << ": ";
-        cin >> marks[i];
-    }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << "Student " << i + 1 << ": ";
+    //     cin >> marks[i];
+    // }
 
-    // Display Marks and Results
-    cout << "\nStudent Results:\n";
+    // // Display Marks and Results
+    // cout << "\nStudent Results:\n";
 
-    for (int i = 0; i < 5; i++)
-    {
-        cout << "Student " << i + 1 << " Marks: " << marks[i];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << "Student " << i + 1 << " Marks: " << marks[i];
 
-        if (marks[i] >= 50)
-        {
-            cout << " - Pass\n";
-            passed++;
-        }
-        else
-        {
-            cout << " - Needs practice\n";
-        }
+    //     if (marks[i] >= 50)
+    //     {
+    //         cout << " - Pass\n";
+    //         passed++;
+    //     }
+    //     else
+    //     {
+    //         cout << " - Needs practice\n";
+    //     }
 
-        total = total + marks[i];
-    }
+    //     total = total + marks[i];
+    // }
 
-    // Calculate Average
-    average = (double)total / 5;
+    // // Calculate Average
+    // average = (double)total / 5;
 
-    // Display Final Statistics
-    cout << "\nClass Total: " << total;
-    cout << "\nClass Average: " << average;
-    cout << "\nStudents Passed: " << passed;
+    // // Display Final Statistics
+    // cout << "\nClass Total: " << total;
+    // cout << "\nClass Average: " << average;
+    // cout << "\nStudents Passed: " << passed;
+
+
+int mark;
+    do {
+        cout << "Enter a mark (0-100): ";
+        cin >> mark;
+    } while (mark < 0 || mark > 100);
+    cout << "Accepted: " << mark << '\n';
+    cout << "Accepted: " << mark << '\n';
 
     return 0;
 }
