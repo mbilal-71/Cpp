@@ -1466,7 +1466,7 @@ int mark;
         cin >> mark;
     } while (mark < 0 || mark > 100);
     cout << "Accepted: " << mark << '\n';
-    cout << "Accepted: " << mark << '\n';
+    
 
     return 0;
 }
